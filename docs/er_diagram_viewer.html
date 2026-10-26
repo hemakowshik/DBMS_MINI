@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enterprise Relational Data Model | IPO Intelligence</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    body {
+      background-color: #0b0f19;
+      color: #f1f5f9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      margin: 0 0 5px 0;
+      font-size: 24px;
+      color: #38bdf8;
+    }
+    .header p {
+      margin: 0;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+    .btn-bar {
+      margin: 15px 0;
+      display: flex;
+      gap: 12px;
+    }
+    .btn {
+      background: #1e293b;
+      color: #38bdf8;
+      border: 1px solid #334155;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #38bdf8;
+      color: #04101e;
+    }
+    .diagram-card {
+      background: #131b2e;
+      border: 1px solid #273754;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 95vw;
+      overflow-x: auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .mermaid {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Relational ER Diagram (8 Normalized Tables)</h1>
+    <p>Institutional Relational Architecture &bull; 8 Core Normalized Entities &bull; BCNF / 3NF Specification</p>
+    <div class="btn-bar">
+      <a href="er_diagram.png" download class="btn">⬇ Download High-Res PNG (300 DPI)</a>
+      <a href="er_diagram.pdf" download class="btn">⬇ Download Vector PDF</a>
+      <button onclick="window.print()" class="btn">🖨 Print / Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="diagram-card">
+    <div class="mermaid">
+erDiagram
+    IPOS ||--|{ IPO_RESERVATIONS : "has category quotas (1:N)"
+    IPOS ||--|{ ANCHOR_INVESTORS : "allocates shares to (1:N)"
+    IPOS ||--|{ SUBSCRIPTION_BIDS : "records daily bidding (1:N)"
+    IPOS ||--|| SECONDARY_LISTING_METRICS : "discovers IEP on listing (1:1)"
+    IPOS ||--|{ GMP_PLATFORM_RECORDS : "tracks multi-source quotes (1:N)"
+    IPOS ||--|{ GMP_ACCURACY_EVAL : "evaluated against actual gain (1:N)"
+    IPOS ||--|{ DRHP_RHP_DIFFS : "tracks regulatory amendments (1:N)"
+
+    IPOS {
+        int ipo_id PK
+        string company_name
+        string symbol UK
+        string isin UK
+        string bse_code
+        string listing_exchange
+        string issue_type
+        string sale_type
+        decimal face_value
+        decimal price_band_min
+        decimal price_band_max
+        decimal issue_price
+        int lot_size
+        decimal employee_discount
+        bigint total_issue_shares
+        decimal total_issue_val_cr
+        decimal fresh_issue_cr
+        decimal ofs_val_cr
+        date open_date
+        date close_date
+        date allotment_date
+        date refund_date
+        date listing_date
+        date anchor_lockin_30d
+        date anchor_lockin_90d
+        date pre_ipo_lockin_180d
+        string brlm_lead_manager
+        string registrar_name
+        string sector
+        string status
+    }
+
+    IPO_RESERVATIONS {
+        int reservation_id PK
+        int ipo_id FK
+        string category_name
+        decimal quota_percent
+        bigint shares_reserved
+        decimal min_investment_inr
+        decimal max_investment_inr
+    }
+
+    ANCHOR_INVESTORS {
+        int anchor_id PK
+        int ipo_id FK
+        string investor_name
+        string investor_category
+        bigint shares_allocated
+        decimal bid_price
+        decimal amount_cr
+        int lockin_period_days
+        date lockin_expiry_date
+    }
+
+    SUBSCRIPTION_BIDS {
+        int bid_id PK
+        int ipo_id FK
+        int day_number
+        date bidding_date
+        decimal qib_subscription_times
+        decimal nii_subscription_times
+        decimal retail_subscription_times
+        decimal employee_subscription_times
+        decimal total_subscription_times
+    }
+
+    SECONDARY_LISTING_METRICS {
+        int metric_id PK
+        int ipo_id FK, UK
+        decimal prev_close
+        decimal iep
+        decimal listing_day_open
+        decimal listing_day_high
+        decimal listing_day_low
+        decimal listing_day_close
+        decimal listing_gain_percent
+        bigint ieq
+        decimal indicative_val_lakhs
+        int cancelled_buy_orders_count
+        int cancelled_sell_orders_count
+        bigint cancelled_buy_qty
+        bigint cancelled_sell_qty
+        string trading_status
+    }
+
+    GMP_PLATFORM_RECORDS {
+        int record_id PK
+        int ipo_id FK
+        string platform_name
+        date quote_date
+        decimal gmp_inr
+        decimal estimated_listing_price
+        decimal estimated_gain_percent
+        string rating_sentiment
+    }
+
+    GMP_ACCURACY_EVAL {
+        int eval_id PK
+        int ipo_id FK
+        string platform_name
+        decimal last_gmp_predicted_gain_pct
+        decimal actual_listing_gain_pct
+        decimal absolute_error_pct
+        string error_direction
+    }
+
+    DRHP_RHP_DIFFS {
+        int diff_id PK
+        int ipo_id FK
+        string parameter_name
+        string drhp_val
+        string rhp_val
+        decimal percentage_change
+        string change_nature
+        boolean sebi_observation_noted
+    }
+    </div>
+  </div>
+
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'dark',
+      themeVariables: {
+        darkMode: true,
+        background: '#131b2e',
+        primaryColor: '#1f6feb',
+        primaryTextColor: '#f1f5f9',
+        primaryBorderColor: '#58a6ff',
+        lineColor: '#38bdf8',
+        secondaryColor: '#238636',
+        tertiaryColor: '#161b22'
+      }
+    });
+  </script>
+</body>
+</html>

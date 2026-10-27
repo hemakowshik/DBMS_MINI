@@ -1,4 +1,4 @@
-# IPOWatch Analytics: Hybrid DBMS Mini Project
+# IPOWatch Analytics: DBMS Mini Project
 **Course**: Database Management Systems Lab (UE23CS252 / AIML)  
 **Evaluator**: Prof. Smitha GR, Faculty of AIML, RR Campus, PES University  
 **Student SRN**: PES1UG24AM106  
@@ -20,6 +20,14 @@ This will automatically:
 2. Populate the database with realistic seed data.
 3. Seed MongoDB collections (`localhost:27017`).
 4. Start the interactive web dashboard on `http://127.0.0.1:5000` and open your default browser.
+
+### 🌟 V2 Dual-Mode Terminal (Enhanced Review Dashboard)
+To run the dual-mode capital market terminal (Company-First Cockpit + Market Comparison + Clickable Source Accuracy Forensics Modal):
+```powershell
+cd C:\DBMS_MINI\v2_dashboard
+python run_v2.py
+```
+*(Runs on `http://127.0.0.1:5001`. See `v2_dashboard/README_V2.md` for full architecture and documentation).*
 
 ---
 

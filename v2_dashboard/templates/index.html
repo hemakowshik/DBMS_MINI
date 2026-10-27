@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPOWatch Intelligence | Capital Market Terminal</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Institutional Header -->
+  <header class="top-navbar">
+    <div class="brand">
+      <div class="brand-icon-box">
+        <i class="fa-solid fa-chart-line brand-icon"></i>
+      </div>
+      <div>
+        <div class="brand-title-wrap">
+          <h1>IPOWatch Intelligence</h1>
+          <span class="pro-tag">TERMINAL</span>
+        </div>
+        <p class="subtitle">Primary Market Intelligence, Prospectus Surveillance & GMP Forensics</p>
+      </div>
+    </div>
+    
+    <!-- Mode Switcher -->
+    <div class="mode-switcher-container">
+      <div class="mode-switch-label">EXPLORATION MODE:</div>
+      <div class="mode-switch-group">
+        <button class="mode-btn active" id="btn-mode-company">
+          <i class="fa-solid fa-building"></i> Company-First <span class="mode-sub">(Features in Companies)</span>
+        </button>
+        <button class="mode-btn" id="btn-mode-market">
+          <i class="fa-solid fa-layer-group"></i> Market Comparison <span class="mode-sub">(Companies in Features)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+
+    <!-- ================================================================= -->
+    <!-- MODE 1: COMPANY-FIRST MODE ("Features in Companies")               -->
+    <!-- ================================================================= -->
+    <div id="mode-company-container" class="mode-view active">
+
+      <!-- View 1A: Companies Directory (Upcoming at Top, Open in Middle, Completed at Bottom) -->
+      <div id="company-directory-view" class="sub-view active">
+        <div class="section-header">
+          <div>
+            <h2><i class="fa-solid fa-list-check"></i> IPO Directory (Chronological Order)</h2>
+            <p class="section-desc">Select any company below to inspect its dedicated intelligence cockpit and feature suite.</p>
+          </div>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="company-search-input" placeholder="Search by company, ticker, or sector...">
+          </div>
+        </div>
+
+        <!-- Section 1: Upcoming at the top -->
+        <div class="status-section" id="section-upcoming">
+          <div class="status-section-header status-upcoming">
+            <span class="status-icon"><i class="fa-solid fa-rocket"></i></span>
+            <h3>Upcoming & Ready for IPO <span class="status-count" id="count-upcoming">(3)</span></h3>
+            <span class="status-tip">Bidding opens shortly &bull; Prospectus & GMP Active</span>
+          </div>
+          <div class="table-card">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Company & Symbol</th>
+                  <th>Sector</th>
+                  <th>Price Band (₹)</th>
+                  <th>Issue Size (₹ Cr)</th>
+                  <th>Fresh / OFS</th>
+                  <th>Open Date</th>
+                  <th>Avg GMP Est.</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-upcoming">
+                <tr><td colspan="8" class="loading">Loading upcoming offerings...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Section 2: Currently Open in the middle -->
+        <div class="status-section" id="section-open">
+          <div class="status-section-header status-open">
+            <span class="status-icon"><i class="fa-solid fa-circle-dot"></i></span>
+            <h3>Currently Open for Bidding <span class="status-count" id="count-open">(2)</span></h3>
+            <span class="status-tip">Active Bidding Window &bull; Subscription Influx</span>
+          </div>
+          <div class="table-card">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Company & Symbol</th>
+                  <th>Sector</th>
+                  <th>Price Band (₹)</th>
+                  <th>Issue Size (₹ Cr)</th>
+                  <th>Fresh / OFS</th>
+                  <th>Closing Date</th>
+                  <th>Total Bids</th>
+                  <th>Avg GMP Est.</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-open">
+                <tr><td colspan="9" class="loading">Loading active offerings...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Section 3: Completed at the bottom -->
+        <div class="status-section" id="section-completed">
+          <div class="status-section-header status-completed">
+            <span class="status-icon"><i class="fa-solid fa-flag-checkered"></i></span>
+            <h3>Completed & Listed IPOs <span class="status-count" id="count-completed">(4)</span></h3>
+            <span class="status-tip">Secondary Market Traded &bull; Listing Price Discovered</span>
+          </div>
+          <div class="table-card">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Company & Symbol</th>
+                  <th>Sector</th>
+                  <th>Issue Price (₹)</th>
+                  <th>Listing Date</th>
+                  <th>IEP (Discovery)</th>
+                  <th>Day 1 Return</th>
+                  <th>Issue Size (₹ Cr)</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-completed">
+                <tr><td colspan="8" class="loading">Loading completed offerings...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- View 1B: Company Feature Cockpit ("Second Window") -->
+      <div id="company-cockpit-view" class="sub-view">
+        <div class="cockpit-top-bar">
+          <button class="btn-back" id="btn-back-to-directory">
+            <i class="fa-solid fa-arrow-left"></i> Back to All Companies
+          </button>
+          <div class="company-header-info">
+            <div class="company-title-row">
+              <h2 id="cockpit-company-name">Company Name</h2>
+              <span class="badge badge-blue" id="cockpit-symbol">SYMBOL</span>
+              <span class="badge" id="cockpit-status-badge">Status</span>
+            </div>
+            <p class="company-meta-line" id="cockpit-meta-line">Sector &bull; ISIN: ... &bull; Lead Managers: ...</p>
+          </div>
+        </div>
+
+        <!-- Quick Summary Metrics Bar -->
+        <div class="company-metrics-strip" id="cockpit-metrics-strip">
+          <div class="metric-pill">
+            <div class="metric-lbl">PRICE BAND</div>
+            <div class="metric-val" id="metric-price-band">--</div>
+          </div>
+          <div class="metric-pill">
+            <div class="metric-lbl">LOT SIZE</div>
+            <div class="metric-val" id="metric-lot-size">--</div>
+          </div>
+          <div class="metric-pill">
+            <div class="metric-lbl">ISSUE SIZE</div>
+            <div class="metric-val" id="metric-issue-size">--</div>
+          </div>
+          <div class="metric-pill">
+            <div class="metric-lbl">FRESH / OFS</div>
+            <div class="metric-val" id="metric-fresh-ofs">--</div>
+          </div>
+          <div class="metric-pill">
+            <div class="metric-lbl">BIDDING DATES</div>
+            <div class="metric-val" id="metric-dates">--</div>
+          </div>
+        </div>
+
+        <!-- Individual Feature Selector Tabs (One at a time) -->
+        <div class="feature-selection-bar">
+          <div class="feature-bar-title">SELECT FEATURE TO INSPECT:</div>
+          <div class="feature-tabs">
+            <button class="feat-tab-btn active" data-feat="feat-gmp">
+              <i class="fa-solid fa-fire-flame-curved"></i> Multi-Source GMP & Accuracy Benchmark
+            </button>
+            <button class="feat-tab-btn" data-feat="feat-scoreboard">
+              <i class="fa-solid fa-bullseye"></i> Forecast Accuracy Benchmark
+            </button>
+            <button class="feat-tab-btn" data-feat="feat-diffs">
+              <i class="fa-solid fa-scale-balanced"></i> Regulatory Variance Tracker
+            </button>
+            <button class="feat-tab-btn" data-feat="feat-timeline">
+              <i class="fa-solid fa-calendar-days"></i> Timeline & Lock-in Expiry
+            </button>
+            <button class="feat-tab-btn" data-feat="feat-media">
+              <i class="fa-solid fa-folder-open"></i> Prospectus & AV Media
+            </button>
+            <button class="feat-tab-btn" data-feat="feat-analytics">
+              <i class="fa-solid fa-chart-pie"></i> Analytics & Financial Allocations
+            </button>
+          </div>
+        </div>
+
+        <!-- Feature Panels (Rendered one at a time) -->
+        <div class="feature-panes-wrapper">
+
+          <!-- Feature 1: Multi-Source GMP Heatmap with Integrated Accuracy Benchmark -->
+          <div id="feat-gmp" class="feat-pane active">
+            <div class="insight-banner banner-cyan">
+              <i class="fa-solid fa-bolt"></i>
+              <div>
+                <h3>Multi-Source GMP Heatmap with Integrated Source Reliability Benchmark</h3>
+                <p>Compare Grey Market Premium quotes across major platforms. Right next to each quote, evaluate the platform's historical <strong>Mean Absolute Error (MAE)</strong> and tendency to overestimate or underestimate. <strong style="color: var(--accent-blue);">Tip:</strong> Click any platform name (e.g., Chittorgarh) to open its deep-dive forecast accuracy forensics window.</p>
+              </div>
+            </div>
+            <div class="table-card">
+              <table class="data-table" id="cockpit-gmp-table">
+                <thead>
+                  <tr>
+                    <th>Tracking Platform</th>
+                    <th>Quoted GMP (₹)</th>
+                    <th>Est. Listing Price</th>
+                    <th>Est. Gain (%)</th>
+                    <th>Market Sentiment</th>
+                    <th>Platform Hist. MAE</th>
+                    <th>Prediction Bias</th>
+                    <th>Reliability Verdict</th>
+                  </tr>
+                </thead>
+                <tbody id="cockpit-gmp-tbody">
+                  <!-- Rendered by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Feature 2: Forecast Accuracy Benchmark -->
+          <div id="feat-scoreboard" class="feat-pane">
+            <div class="insight-banner">
+              <i class="fa-solid fa-bullseye"></i>
+              <div>
+                <h3>Platform Forecast Accuracy Benchmark & Reliability Index</h3>
+                <p>Audits all market tracking sources by measuring their predicted gain against real stock exchange closing prices.</p>
+              </div>
+            </div>
+            <div class="table-card">
+              <table class="data-table" id="cockpit-scoreboard-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Platform Name</th>
+                    <th>Sample Size</th>
+                    <th>Mean Absolute Error (MAE)</th>
+                    <th>Min Error</th>
+                    <th>Max Error</th>
+                    <th>Overestimation Bias</th>
+                    <th>Underestimation Bias</th>
+                    <th>Verdict</th>
+                  </tr>
+                </thead>
+                <tbody id="cockpit-scoreboard-tbody">
+                  <!-- Rendered by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Feature 3: Regulatory Variance Tracker -->
+          <div id="feat-diffs" class="feat-pane">
+            <div class="insight-banner banner-blue">
+              <i class="fa-solid fa-file-shield"></i>
+              <div>
+                <h3>Regulatory Variance Tracker (DRHP vs RHP Post-SEBI Review)</h3>
+                <p>Side-by-side inspection of quiet changes made after SEBI review for <strong id="diff-company-label">this company</strong> &mdash; tracking capital restructuring, promoter OFS adjustments, and revised disclosures.</p>
+              </div>
+            </div>
+            <div class="diff-grid" id="cockpit-diff-container">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Feature 4: Timeline & Lock-in Expiry -->
+          <div id="feat-timeline" class="feat-pane">
+            <div class="insight-banner">
+              <i class="fa-solid fa-timeline"></i>
+              <div>
+                <h3>Lifecycle Milestones & Institutional Lock-In Expiry Schedule</h3>
+                <p>Monitors critical offering milestones and tracks 30-day and 90-day Anchor institutional lock-in releases to forecast secondary market selling supply shocks.</p>
+              </div>
+            </div>
+            <div class="timeline-card" id="cockpit-timeline-card">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Feature 5: Prospectus & AV Media -->
+          <div id="feat-media" class="feat-pane">
+            <div class="insight-banner banner-cyan">
+              <i class="fa-solid fa-folder-closed"></i>
+              <div>
+                <h3>Official Regulatory Filings & Multi-Modal Media Repository</h3>
+                <p>Direct verified links to SEBI public filings, Draft Red Herring Prospectus (DRHP) PDF, final Red Herring Prospectus (RHP) PDF, official corporate Audio-Visual MP4 presentations, and analyst reviews.</p>
+              </div>
+            </div>
+            <div class="repo-grid" id="cockpit-media-container">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Feature 6: Analytics & Financial Allocations -->
+          <div id="feat-analytics" class="feat-pane">
+            <div class="insight-banner">
+              <i class="fa-solid fa-chart-column"></i>
+              <div>
+                <h3>Capital Structure, Allocations & Secondary Discovery</h3>
+                <p>Detailed breakdown of investor quotas, institutional anchor allotments, time-series bidding progression, and pre-open secondary market equilibrium discovery (IEP).</p>
+              </div>
+            </div>
+            <div id="cockpit-analytics-container">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ================================================================= -->
+    <!-- MODE 2: MARKET COMPARISON MODE ("Companies in Features")           -->
+    <!-- ================================================================= -->
+    <div id="mode-market-container" class="mode-view">
+
+      <nav class="market-tabs-nav">
+        <button class="market-tab-btn active" data-mtab="mtab-gmp"><i class="fa-solid fa-fire-flame-curved"></i> Multi-Source GMP Heatmap</button>
+        <button class="market-tab-btn" data-mtab="mtab-scoreboard"><i class="fa-solid fa-bullseye"></i> Forecast Accuracy Benchmark</button>
+        <button class="market-tab-btn" data-mtab="mtab-diffs"><i class="fa-solid fa-scale-balanced"></i> Regulatory Variance Tracker</button>
+        <button class="market-tab-btn" data-mtab="mtab-timeline"><i class="fa-solid fa-calendar-days"></i> Timeline & Lock-in Expiry</button>
+        <button class="market-tab-btn" data-mtab="mtab-repository"><i class="fa-solid fa-folder-open"></i> Prospectus & AV Media</button>
+        <button class="market-tab-btn" data-mtab="mtab-reports"><i class="fa-solid fa-chart-pie"></i> Analytics & Aggregations</button>
+      </nav>
+
+      <!-- Market Tab 1: GMP Heatmap -->
+      <section id="mtab-gmp" class="market-pane active">
+        <div class="section-header">
+          <div>
+            <h2><i class="fa-solid fa-fire"></i> Cross-Company Multi-Source GMP Heatmap</h2>
+            <p class="section-desc">Consolidated quotes across major independent market trackers to identify syndicate divergence. <strong style="color: var(--accent-blue);">Tip:</strong> Click any platform source (e.g., Chittorgarh) to open its accuracy metrics & error forensics window.</p>
+          </div>
+        </div>
+        <div class="heatmap-grid" id="market-gmp-container">
+          <!-- Rendered by JS -->
+        </div>
+      </section>
+
+      <!-- Market Tab 2: Forecast Accuracy Benchmark -->
+      <section id="mtab-scoreboard" class="market-pane">
+        <div class="insight-banner banner-cyan">
+          <i class="fa-solid fa-crosshairs"></i>
+          <div>
+            <h3>Predictive Accuracy Benchmark & Source Reliability Index</h3>
+            <p>Evaluates pre-listing Grey Market Premium forecasts against actual exchange discovery prices (IEP) to quantify Mean Absolute Error (MAE) and platform sentiment bias.</p>
+          </div>
+        </div>
+        <div class="table-card">
+          <table class="data-table" id="market-scoreboard-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Platform Source</th>
+                <th>Sample Size</th>
+                <th>Mean Absolute Error (MAE)</th>
+                <th>Min Error</th>
+                <th>Max Error</th>
+                <th>Overestimation Bias</th>
+                <th>Underestimation Bias</th>
+                <th>Reliability Index</th>
+              </tr>
+            </thead>
+            <tbody id="market-scoreboard-tbody">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Market Tab 3: Regulatory Variance Tracker -->
+      <section id="mtab-diffs" class="market-pane">
+        <div class="insight-banner banner-blue">
+          <i class="fa-solid fa-file-shield"></i>
+          <div>
+            <h3>Cross-Offering Regulatory Prospectus Variance Surveillance</h3>
+            <p>Automated surveillance of post-filing adjustments between Draft Prospectus (DRHP) and final approved Prospectus (RHP) across all offerings.</p>
+          </div>
+        </div>
+        <div class="diff-grid" id="market-diff-container">
+          <!-- Rendered by JS -->
+        </div>
+      </section>
+
+      <!-- Market Tab 4: Timeline Matrix -->
+      <section id="mtab-timeline" class="market-pane">
+        <div class="section-header">
+          <div>
+            <h2><i class="fa-solid fa-timeline"></i> Lifecycle Milestones & Lock-In Expiry Schedule</h2>
+            <p class="section-desc">Monitors critical offering milestones and tracks 30-day and 90-day Anchor lock-in releases across all offerings.</p>
+          </div>
+        </div>
+        <div class="timeline-container" id="market-timeline-container">
+          <!-- Rendered by JS -->
+        </div>
+      </section>
+
+      <!-- Market Tab 5: Repository -->
+      <section id="mtab-repository" class="market-pane">
+        <div class="section-header">
+          <div>
+            <h2><i class="fa-solid fa-folder-closed"></i> Centralized Prospectus & Executive Media Repository</h2>
+            <p class="section-desc">Direct access to regulatory DRHP/RHP filings, official corporate audio-visual walkthroughs, and analyst briefings.</p>
+          </div>
+        </div>
+        <div class="repository-grid" id="market-repo-container">
+          <!-- Rendered by JS -->
+        </div>
+      </section>
+
+      <!-- Market Tab 6: Reports Engine -->
+      <section id="mtab-reports" class="market-pane">
+        <div class="section-header">
+          <div>
+            <h2><i class="fa-solid fa-chart-column"></i> Analytical Reports & Aggregations Engine</h2>
+            <p class="section-desc">Execute multi-dimensional financial aggregations, correlation models, and cross-pipeline analysis.</p>
+          </div>
+        </div>
+
+        <div class="reports-selector">
+          <button class="rep-btn active" data-rep="1"><i class="fa-solid fa-industry"></i> 1. Sector & Issue Capital Aggregation</button>
+          <button class="rep-btn" data-rep="2"><i class="fa-solid fa-bullseye"></i> 2. GMP Platform Error & Bias Benchmark</button>
+          <button class="rep-btn" data-rep="3"><i class="fa-solid fa-chart-line"></i> 3. Institutional Demand vs Listing Performance</button>
+          <button class="rep-btn" data-rep="4"><i class="fa-solid fa-lock-open"></i> 4. Anchor Lock-In Capital Exposure Schedule</button>
+          <button class="rep-btn" data-rep="5"><i class="fa-solid fa-layer-group"></i> 5. Community Sentiment vs Listing Returns</button>
+        </div>
+
+        <div class="report-display-card">
+          <div class="report-meta">
+            <h3 id="report-title">Loading report...</h3>
+            <p id="report-desc"></p>
+          </div>
+
+          <div class="query-box">
+            <div class="query-header">
+              <span><i class="fa-solid fa-terminal"></i> Database Engine Query</span>
+              <span class="engine-badge" id="report-engine-badge">SQL</span>
+            </div>
+            <pre><code id="report-query-code">-- Query definition appears here</code></pre>
+          </div>
+
+          <div class="table-card">
+            <table class="data-table" id="report-table">
+              <thead id="report-thead"></thead>
+              <tbody id="report-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Dedicated Platform Accuracy & Forecast Forensics Modal Window -->
+  <div class="modal-backdrop" id="platform-modal">
+    <div class="modal-content modal-content-wide">
+      <div class="modal-header">
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+            <h2 id="platform-modal-title">Source Accuracy Forensics</h2>
+            <span class="badge" id="platform-modal-verdict">Reliability</span>
+          </div>
+          <p id="platform-modal-subtitle" class="text-muted" style="margin-top: 0.25rem;">Historical Accuracy Benchmark & Grey Market Predictive Reliability Audit</p>
+        </div>
+        <button class="close-btn" id="platform-modal-close">&times;</button>
+      </div>
+      <div class="modal-body" id="platform-modal-body">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <i class="fa-solid fa-chart-line"></i> <strong>IPOWatch Intelligence Platform</strong> &bull; Institutional Primary Market Surveillance
+      </div>
+      <p class="footer-copy">All securities data synchronized with National Stock Exchange (NSE) & Bombay Stock Exchange (BSE) discovery feeds &bull; Confidential & Proprietary Analytics</p>
+    </div>
+  </footer>
+
+  <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

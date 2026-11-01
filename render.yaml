@@ -1,7 +1,8 @@
 services:
   - type: web
-    name: ipowatch-terminal-v2
+    name: ipowatch-terminal-mark4
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn v2_dashboard.backend.app:app
+    startCommand: gunicorn mark4.backend.app:app
     plan: free
+

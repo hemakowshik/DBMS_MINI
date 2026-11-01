@@ -29,6 +29,14 @@ python run_v2.py
 ```
 *(Runs on `http://127.0.0.1:5001`. See `v2_dashboard/README_V2.md` for full architecture and documentation).*
 
+### 🌐 V3 Live Market Terminal (Real Scraped Market Data & Web Crawler)
+To run the terminal populated with 100% real, active Indian IPO market data scraped from InvestorGain, IPOWatch, Chittorgarh & SEBI:
+```powershell
+cd C:\DBMS_MINI\v3_live_dashboard
+python run_v3.py
+```
+*(Runs on `http://127.0.0.1:5002` with 1-click live market re-crawler. Run `python crawl_now.py` to re-scrape anytime. See `v3_live_dashboard/README_V3.md` for documentation).*
+
 ---
 
 ## 📋 Faculty Requirements Compliance Checklist

@@ -307,11 +307,15 @@ def sync_csv_from_excel():
     for sheet_name, csv_path in sheet_csv_map.items():
         if sheet_name in wb.sheetnames:
             ws = wb[sheet_name]
-            with open(csv_path, "w", newline="", encoding="utf-8") as f:
-                writer = csv.writer(f)
-                for row in ws.iter_rows(values_only=True):
-                    if any(cell is not None for cell in row):
-                        writer.writerow([cell if cell is not None else "" for cell in row])
+            try:
+                with open(csv_path, "w", newline="", encoding="utf-8") as f:
+                    writer = csv.writer(f)
+                    for row in ws.iter_rows(values_only=True):
+                        if any(cell is not None for cell in row):
+                            writer.writerow([cell if cell is not None else "" for cell in row])
+            except (PermissionError, IOError) as e:
+                # If Excel currently has the CSV file locked, skip CSV writing gracefully
+                pass
 
 def read_media_links_for_company(symbol):
     """

@@ -201,7 +201,10 @@ def api_company_detail(symbol):
 
     # Fallback if MongoDB is offline
     if not filings:
-        from crawler.ipo_crawler import OFFICIAL_FILING_LINKS
+        try:
+            from ..crawler.ipo_crawler import OFFICIAL_FILING_LINKS
+        except Exception:
+            from crawler.ipo_crawler import OFFICIAL_FILING_LINKS
         slug = sym.lower()
         links = OFFICIAL_FILING_LINKS.get(sym, {})
         rhp_url = links.get("rhp") or ("https://listing.bseindia.com/download/8888888/preanchor/rhpgid_20261021183023.zip" if sym == "EAAA" else "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F")
@@ -533,9 +536,37 @@ def api_sheets_sync():
             raw_rows = list(csv.DictReader(io.StringIO(data.get("csv_data"))))
         else:
             fp = os.path.join(sheets_dir, f"{stype}.csv")
+            read_success = False
             if os.path.exists(fp):
-                with open(fp, "r", encoding="utf-8") as f:
-                    raw_rows = list(csv.DictReader(f))
+                try:
+                    with open(fp, "r", encoding="utf-8") as f:
+                        raw_rows = list(csv.DictReader(f))
+                        read_success = True
+                except Exception:
+                    read_success = False
+            if not read_success:
+                try:
+                    import openpyxl
+                    from .sheets_sync_service import WORKBOOK_PATH
+                    if os.path.exists(WORKBOOK_PATH):
+                        wb = openpyxl.load_workbook(WORKBOOK_PATH, data_only=True, read_only=True)
+                        sheet_map = {
+                            "regulatory_variances": "Regulatory_Variances",
+                            "timeline_lockin": "Timeline_Lockin_Schedule",
+                            "prospectus_media_links": "Prospectus_Media_Links"
+                        }
+                        t_sheet = sheet_map.get(stype)
+                        if t_sheet and t_sheet in wb.sheetnames:
+                            ws = wb[t_sheet]
+                            all_rows = list(ws.iter_rows(values_only=True))
+                            if all_rows and len(all_rows) > 1:
+                                headers = [str(h) if h is not None else f"col_{i}" for i, h in enumerate(all_rows[0])]
+                                for r in all_rows[1:]:
+                                    if any(c is not None for c in r):
+                                        r_dict = {headers[i]: (str(val) if val is not None else "") for i, val in enumerate(r) if i < len(headers)}
+                                        raw_rows.append(r_dict)
+                except Exception as xl_err:
+                    print(f"[EXCEL DIRECT READ] Notice: {xl_err}")
 
         normalized = []
         for row in raw_rows:
@@ -630,7 +661,10 @@ def api_sheets_sync():
         if sheet_type in ("prospectus_media_links", "all"):
             rows = get_csv_rows("prospectus_media_links")
             media_cnt = 0
-            from crawler.ipo_crawler import OFFICIAL_FILING_LINKS
+            try:
+                from ..crawler.ipo_crawler import OFFICIAL_FILING_LINKS
+            except Exception:
+                from crawler.ipo_crawler import OFFICIAL_FILING_LINKS
             db = get_nosql_db()
 
             for r in rows:
@@ -701,11 +735,14 @@ def api_sheets_sync():
 def api_crawl_refresh():
     """Triggers on-demand live crawler pipeline and refreshes live database."""
     global LAST_CRAWL_TIMESTAMP
-    from crawler.data_transformer import ingest_live_market_data
     try:
-        ingest_live_market_data()
-        LAST_CRAWL_TIMESTAMP = str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S IST"))
-        count = execute_query("SELECT count(*) as cnt FROM ipos")[0]["cnt"]
+        from ..crawler.data_transformer import ingest_live_market_data
+    except Exception:
+        from crawler.data_transformer import ingest_live_market_data
+    try:
+        from ..crawler.data_transformer import ingest_live_market_data
+    except Exception:
+        from crawler.data_transformer import ingest_live_market_data
         return jsonify({
             "status": "success",
             "message": f"Successfully scraped and refreshed {count} live offerings from Indian market trackers.",

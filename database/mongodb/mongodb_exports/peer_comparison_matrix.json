@@ -1,51 +1,5 @@
 [
   {
-    "symbol": "BOMBAYCOAT",
-    "company_name": "Bombay Coated & Special Steels",
-    "sector": "Iron & Steel Products",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "MKSONS",
-    "company_name": "M.K.Sons Fine Jewels",
-    "sector": "Gems, Jewellery And Watches",
-    "peers": [
-      {
-        "company": "Titan Company Limited",
-        "p_e": 82.1,
-        "ronw_pct": 29.5,
-        "eps": 39.8,
-        "revenue_cr": 51080.0,
-        "custom_metric": "Retail_Store_Count: 3100"
-      },
-      {
-        "company": "Kalyan Jewellers India Limited",
-        "p_e": 64.3,
-        "ronw_pct": 19.1,
-        "eps": 9.4,
-        "revenue_cr": 18500.0,
-        "custom_metric": "Same_Store_Sales_Growth: 18%"
-      }
-    ]
-  },
-  {
     "symbol": "MAXWELL",
     "company_name": "Maxwell Engineering Solutions",
     "sector": "Other Industrial Products",
@@ -92,9 +46,9 @@
     ]
   },
   {
-    "symbol": "SFCENV",
-    "company_name": "SFC Environmental Technologies",
-    "sector": "Diversified Financial Services",
+    "symbol": "BOMBAYCOAT",
+    "company_name": "Bombay Coated & Special Steels",
+    "sector": "Iron & Steel Products",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -111,6 +65,29 @@
         "eps": 18.5,
         "revenue_cr": 4500.0,
         "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "MKSONS",
+    "company_name": "M.K.Sons Fine Jewels",
+    "sector": "Gems, Jewellery And Watches",
+    "peers": [
+      {
+        "company": "Titan Company Limited",
+        "p_e": 82.1,
+        "ronw_pct": 29.5,
+        "eps": 39.8,
+        "revenue_cr": 51080.0,
+        "custom_metric": "Retail_Store_Count: 3100"
+      },
+      {
+        "company": "Kalyan Jewellers India Limited",
+        "p_e": 64.3,
+        "ronw_pct": 19.1,
+        "eps": 9.4,
+        "revenue_cr": 18500.0,
+        "custom_metric": "Same_Store_Sales_Growth: 18%"
       }
     ]
   },
@@ -161,78 +138,9 @@
     ]
   },
   {
-    "symbol": "PARAS",
-    "company_name": "Paras Healthcare",
-    "sector": "Hospital",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
     "symbol": "TONBO",
     "company_name": "Tonbo Imaging India",
     "sector": "Aerospace & Defense",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "ZETWERK",
-    "company_name": "Zetwerk Manufacturing Business",
-    "sector": "Industrial Products",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "BONFIG",
-    "company_name": "Bonfiglioli Transmissions",
-    "sector": "Industrial Products",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -276,9 +184,9 @@
     ]
   },
   {
-    "symbol": "FUSIONCX",
-    "company_name": "Fusion CX",
-    "sector": "Diversified Financial Services",
+    "symbol": "BONFIG",
+    "company_name": "Bonfiglioli Transmissions",
+    "sector": "Industrial Products",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -299,8 +207,8 @@
     ]
   },
   {
-    "symbol": "HDFIRE",
-    "company_name": "HD Fire Protect",
+    "symbol": "ZETWERK",
+    "company_name": "Zetwerk Manufacturing Business",
     "sector": "Industrial Products",
     "peers": [
       {
@@ -325,29 +233,6 @@
     "symbol": "VEDANT",
     "company_name": "Vedant Poly Fabs",
     "sector": "Packaging",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "JOHNSON",
-    "company_name": "Johnsoncab Electricals",
-    "sector": "Cables - Electricals",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -417,6 +302,282 @@
     "symbol": "ANTALA",
     "company_name": "Antala Industries",
     "sector": "Packaging",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "NITYASGEM",
+    "company_name": "Nityas Gems & Jewellery",
+    "sector": "Gems, Jewellery And Watches",
+    "peers": [
+      {
+        "company": "Titan Company Limited",
+        "p_e": 82.1,
+        "ronw_pct": 29.5,
+        "eps": 39.8,
+        "revenue_cr": 51080.0,
+        "custom_metric": "Retail_Store_Count: 3100"
+      },
+      {
+        "company": "Kalyan Jewellers India Limited",
+        "p_e": 64.3,
+        "ronw_pct": 19.1,
+        "eps": 9.4,
+        "revenue_cr": 18500.0,
+        "custom_metric": "Same_Store_Sales_Growth: 18%"
+      }
+    ]
+  },
+  {
+    "symbol": "VISHALNIR",
+    "company_name": "Vishal Nirmiti",
+    "sector": "Civil Construction",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "SRITINDIA",
+    "company_name": "SRIT India",
+    "sector": "IT Enabled Services",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "SHAHINVES",
+    "company_name": "Shah Investor's Home",
+    "sector": "Stockbroking & Allied",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "ACEVECTOR",
+    "company_name": "Acevector",
+    "sector": "E-Retail/ E-Commerce",
+    "peers": [
+      {
+        "company": "Titan Company Limited",
+        "p_e": 82.1,
+        "ronw_pct": 29.5,
+        "eps": 39.8,
+        "revenue_cr": 51080.0,
+        "custom_metric": "Retail_Store_Count: 3100"
+      },
+      {
+        "company": "Kalyan Jewellers India Limited",
+        "p_e": 64.3,
+        "ronw_pct": 19.1,
+        "eps": 9.4,
+        "revenue_cr": 18500.0,
+        "custom_metric": "Same_Store_Sales_Growth: 18%"
+      }
+    ]
+  },
+  {
+    "symbol": "ORIENTCAB",
+    "company_name": "Orient Cables (India)",
+    "sector": "Diversified Financial Services",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "GERMANGRE",
+    "company_name": "German Green Steel & Power",
+    "sector": "Iron & Steel Products",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "PARAS",
+    "company_name": "Paras Healthcare",
+    "sector": "Hospital",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "SFCENV",
+    "company_name": "SFC Environmental Technologies",
+    "sector": "Diversified Financial Services",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "FUSIONCX",
+    "company_name": "Fusion CX",
+    "sector": "Diversified Financial Services",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "HDFIRE",
+    "company_name": "HD Fire Protect",
+    "sector": "Industrial Products",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "JOHNSON",
+    "company_name": "Johnsoncab Electricals",
+    "sector": "Cables - Electricals",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",

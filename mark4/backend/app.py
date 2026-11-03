@@ -736,10 +736,21 @@ def api_crawl_refresh():
     """Triggers on-demand live crawler pipeline and refreshes live database."""
     global LAST_CRAWL_TIMESTAMP
     try:
+        import importlib
         try:
-            from ..crawler.data_transformer import ingest_live_market_data
+            import crawler.ipo_crawler as c_ipo
+            import crawler.data_transformer as c_dt
+            importlib.reload(c_ipo)
+            importlib.reload(c_dt)
+            ingest_live_market_data = c_dt.ingest_live_market_data
         except Exception:
-            from crawler.data_transformer import ingest_live_market_data
+            try:
+                from ..crawler import ipo_crawler as c_ipo, data_transformer as c_dt
+                importlib.reload(c_ipo)
+                importlib.reload(c_dt)
+                ingest_live_market_data = c_dt.ingest_live_market_data
+            except Exception:
+                from crawler.data_transformer import ingest_live_market_data
 
         count = ingest_live_market_data()
         LAST_CRAWL_TIMESTAMP = str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S IST"))

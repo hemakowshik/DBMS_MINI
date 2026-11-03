@@ -214,7 +214,7 @@ def fetch_live_investorgain_gmp_map():
         print(f"[WARN] InvestorGain scraper notice: {e}")
     return quotes
 
-def get_soup(url, timeout=20):
+def get_soup(url, timeout=8):
     try:
         r = requests.get(url, headers=HEADERS, timeout=timeout)
         if r.status_code == 200:
@@ -655,22 +655,8 @@ def parse_chittorgarh_dossier(slug, ipo_id, board='mainboard'):
             "shares_locked_90d": int(total_anc_sh // 2)
         }
 
-    # 4. Companion Page 2: InvestorGain Real GMP
-    gmp_url = f"https://www.investorgain.com/chr-gmp/{slug}/{ipo_id}/"
-    soup_gmp = get_soup(gmp_url)
+    # 4. Multi-Source Quotes Generation (Enriched via Master GMP Map)
     ig_gmp_val = 15.0
-    if soup_gmp:
-        t_gmp = soup_gmp.find('table')
-        if t_gmp:
-            rows_gmp = t_gmp.find_all('tr')
-            if len(rows_gmp) > 1:
-                cells = [c.get_text(' ', strip=True) for c in rows_gmp[1].find_all(['td', 'th'])]
-                if len(cells) >= 2:
-                    g_match = re.search(r'₹\s*(\d+)', cells[1])
-                    if g_match:
-                        ig_gmp_val = float(g_match.group(1))
-
-    # Multi-Source Quotes Generation based on real spreads
     gmp_sources = {
         "InvestorGain": ig_gmp_val,
         "IPOWatch": round(max(0.0, ig_gmp_val * 0.95), 1),
@@ -795,16 +781,25 @@ def get_comprehensive_real_market_catalog():
             "Chittorgarh": ch
         }
 
-    for slug, ipo_id in target_slugs:
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    def scrape_single_dossier(t):
+        s_slug, s_id = t
         try:
-            print(f"[CRAWLER] Dossier scrape: {slug} (ID: {ipo_id})...")
-            d = parse_chittorgarh_dossier(slug, ipo_id)
-            if d:
-                # Enrich with cross-platform live quotes
-                d["gmp_sources"] = resolve_live_gmp(d["company_name"], d["gmp_sources"])
-                offerings.append(d)
-        except Exception as e:
-            print(f"[WARN] Error parsing {slug}: {e}")
+            item = parse_chittorgarh_dossier(s_slug, s_id)
+            if item:
+                item["gmp_sources"] = resolve_live_gmp(item["company_name"], item["gmp_sources"])
+                return item
+        except Exception as err:
+            print(f"[WARN] Error parsing {s_slug}: {err}")
+        return None
+
+    print(f"[CRAWLER] Concurrently scraping {len(target_slugs)} dossiers across 8 threads...")
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = [executor.submit(scrape_single_dossier, t) for t in target_slugs]
+        for f in as_completed(futures):
+            res = f.result()
+            if res:
+                offerings.append(res)
 
     # Ensure all upcoming offerings have live quotes resolved
     for off in offerings:

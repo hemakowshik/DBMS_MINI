@@ -182,6 +182,7 @@ def ingest_live_market_data():
 
     # 9. Populate NoSQL MongoDB Document Lake
     populate_nosql_live(offerings)
+    return len(offerings)
 
 def populate_nosql_live(offerings):
     """Stores multi-modal filings, AV media, analyst briefs, peer matrices, and deep sections into MongoDB."""

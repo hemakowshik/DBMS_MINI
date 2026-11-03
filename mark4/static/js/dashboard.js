@@ -168,8 +168,19 @@ document.addEventListener("DOMContentLoaded", () => {
       btnRecrawl.innerHTML = `<i class="fa-solid fa-arrows-rotate fa-spin"></i> Crawling Live Market...`;
 
       fetch("/api/crawl/refresh", { method: "POST" })
-        .then(r => r.json())
+        .then(async r => {
+          const contentType = r.headers.get("content-type") || "";
+          if (contentType.includes("application/json")) {
+            return r.json();
+          }
+          const text = await r.text();
+          throw new Error(`Server returned status ${r.status}: ${text.substring(0, 80)}`);
+        })
         .then(res => {
+          if (res.status === "error") {
+            alert(`⚠️ Crawler Notice:\n${res.message}`);
+            return;
+          }
           if (liveSyncStatus && res.last_crawled) {
             liveSyncStatus.textContent = `• Last Crawled: ${res.last_crawled}`;
           }
@@ -180,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         })
         .catch(err => {
-          alert(`❌ Crawler notice: ${err.message}`);
+          alert(`⚠️ Crawler Notice: ${err.message}`);
         })
         .finally(() => {
           btnRecrawl.disabled = false;

@@ -86,6 +86,10 @@ except Exception as e:
     print(f"[STARTUP] Bootstrap notice: {e}")
 
 
+@app.route("/favicon.ico")
+def favicon():
+    return "", 204
+
 @app.route("/")
 def index():
     return render_template("index.html")

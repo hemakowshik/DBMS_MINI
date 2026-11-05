@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>IPOWatch Intelligence | Next.js Terminal (MARK4)</title>
-        <meta name="description" content="DBMS Level 3 Next.js Terminal - Polyglot RDBMS, NoSQL, and Vector DB" />
+        <meta name="description" content="DBMS Level 3 Next.js Terminal - Dual-Engine Relational (MySQL) and NoSQL Document Lake (MongoDB)" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Component {...pageProps} />

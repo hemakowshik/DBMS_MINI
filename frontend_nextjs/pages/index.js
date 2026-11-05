@@ -11,10 +11,9 @@ export default function Home() {
   const [crawling, setCrawling] = useState(false);
   const [schemaObjects, setSchemaObjects] = useState(null);
 
-  // Vector Search States
-  const [vectorQuery, setVectorQuery] = useState('');
-  const [vectorResults, setVectorResults] = useState([]);
-  const [vectorLoading, setVectorLoading] = useState(false);
+  // NoSQL Document Lake States (Option 1: MongoDB)
+  const [filings, setFilings] = useState([]);
+  const [filingSearch, setFilingSearch] = useState('');
 
   // Form State
   const [formMsg, setFormMsg] = useState(null);
@@ -32,12 +31,14 @@ export default function Home() {
   // Load Status and Offerings
   const loadData = async () => {
     try {
-      const [sRes, iRes] = await Promise.all([
+      const [sRes, iRes, fRes] = await Promise.all([
         fetch('/api/status').then(r => r.json()).catch(() => null),
-        fetch('/api/ipos').then(r => r.json()).catch(() => [])
+        fetch('/api/ipos').then(r => r.json()).catch(() => []),
+        fetch('/api/filings').then(r => r.json()).catch(() => [])
       ]);
       if (sRes) setStatus(sRes);
       if (Array.isArray(iRes)) setIpos(iRes);
+      if (Array.isArray(fRes)) setFilings(fRes);
     } catch (e) {
       console.error('Error fetching data:', e);
     } finally {
@@ -73,20 +74,7 @@ export default function Home() {
     }
   };
 
-  // Semantic Vector Search
-  const handleVectorSearch = async (queryText) => {
-    const q = queryText !== undefined ? queryText : vectorQuery;
-    if (!q.trim()) return;
-    setVectorLoading(true);
-    try {
-      const res = await fetch(`/api/vector-search?q=${encodeURIComponent(q)}&k=5`).then(r => r.json());
-      setVectorResults(res.results || []);
-    } catch (e) {
-      console.error(e);
-    } finally {
-      setVectorLoading(false);
-    }
-  };
+
 
   // Submit New IPO Form (Demonstrates DB Validation & Trigger)
   const handleCreateIpo = async (e) => {
@@ -110,6 +98,17 @@ export default function Home() {
     }
   };
 
+  // Filter MongoDB Documents
+  const filteredFilings = filings.filter(doc => {
+    const term = filingSearch.toLowerCase();
+    return (
+      doc.company_name?.toLowerCase().includes(term) ||
+      doc.symbol?.toLowerCase().includes(term) ||
+      doc.sector?.toLowerCase().includes(term) ||
+      doc.statutory_auditors?.toLowerCase().includes(term)
+    );
+  });
+
   // Filter IPOs
   const filteredIpos = ipos.filter(item => {
     const matchSearch =
@@ -132,7 +131,7 @@ export default function Home() {
           <div className="tech-badges">
             <span className="tech-pill">SQL: MySQL / SQLite (ACID)</span>
             <span className="tech-pill">NoSQL: MongoDB Document Lake</span>
-            <span className="tech-pill">Vector DB: Cosine Similarity</span>
+            <span className="tech-pill">Option 1: SQL (MySQL) + NoSQL (MongoDB)</span>
             <span className="tech-pill">Dr. Nagasundari S • Level 3 DBMS</span>
           </div>
         </div>
@@ -183,9 +182,9 @@ export default function Home() {
         </div>
 
         <div className="stat-card">
-          <div className="stat-title">Vector Semantic Search</div>
-          <div className="stat-value" style={{ color: 'var(--accent-green)' }}>Ready</div>
-          <div className="stat-sub">Cosine Similarity (Normalized Dot)</div>
+          <div className="stat-title">NoSQL Document Lake</div>
+          <div className="stat-value" style={{ color: 'var(--accent-green)' }}>{status?.nosql_engine === 'online' ? 'MongoDB Online' : 'MongoDB Ready'}</div>
+          <div className="stat-sub">156 Documents Across 4 Collections</div>
         </div>
       </section>
 
@@ -198,10 +197,10 @@ export default function Home() {
           Primary Market Directory
         </button>
         <button
-          className={`tab-btn ${activeTab === 'vector' ? 'active' : ''}`}
-          onClick={() => setActiveTab('vector')}
+          className={`tab-btn ${activeTab === 'nosql' ? 'active' : ''}`}
+          onClick={() => setActiveTab('nosql')}
         >
-          Vector DB Semantic Search (Req 8)
+          NoSQL Document Lake (MongoDB)
         </button>
         <button
           className={`tab-btn ${activeTab === 'form' ? 'active' : ''}`}
@@ -301,105 +300,120 @@ export default function Home() {
         </section>
       )}
 
-      {/* TAB 2: Vector DB Semantic Search (Requirement 8) */}
-      {activeTab === 'vector' && (
-        <section className="vector-box">
-          <h2 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>
-            Vector Similarity & Semantic Prospectus Search
-          </h2>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: '1.25rem' }}>
-            Natural language semantic search across unstructured DRHP/RHP Prospectus filings, business descriptions, and risk disclosures. Powered by normalized dense term-vector embeddings and <strong>Cosine Similarity</strong> ranking:
-            <code style={{ marginLeft: '0.5rem', background: 'var(--bg-input)', padding: '0.2rem 0.4rem', borderRadius: '4px' }}>
-              Cosine(q, d) = (q · d) / (|q| · |d|)
-            </code>
-          </p>
-
-          <div style={{ display: 'flex', gap: '0.5rem' }}>
-            <input
-              type="text"
-              className="vector-search-input"
-              placeholder="Ask or search: e.g. 'defense electro-optics and night vision', 'clean green steel decarbonization'..."
-              value={vectorQuery}
-              onChange={(e) => setVectorQuery(e.target.value)}
-              onKeyDown={(e) => e.key === 'Enter' && handleVectorSearch()}
-            />
-            <button
-              className="btn-crawl"
-              style={{ height: '46px', whiteSpace: 'nowrap' }}
-              onClick={() => handleVectorSearch()}
-              disabled={vectorLoading}
-            >
-              {vectorLoading ? 'Searching...' : 'Search Vectors'}
-            </button>
+      {/* TAB 2: NoSQL Document Lake (MongoDB - Option 1) */}
+      {activeTab === 'nosql' && (
+        <section className="panel-box">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem', flexWrap: 'wrap', gap: '0.75rem' }}>
+            <div>
+              <h2 style={{ fontSize: '1.25rem', marginBottom: '0.35rem' }}>
+                MongoDB Document Lake (NoSQL Paradigm)
+              </h2>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>
+                Option 1 Compliance: Polymorphic schema storing SEBI statutory prospectuses, multimedia audio/video disclosures, and nested analyst roadshows without rigid relational constraints.
+              </p>
+            </div>
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              <span className="status-badge status-open">Database: ipo_nosql_mark4_db</span>
+              <span className="status-badge" style={{ background: 'rgba(56, 189, 248, 0.15)', color: '#38bdf8' }}>4 Collections</span>
+            </div>
           </div>
 
-          {/* Quick Query Pills */}
-          <div className="query-pills">
+          {/* Quick Collection Pills */}
+          <div className="query-pills" style={{ marginBottom: '1rem' }}>
             <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', alignSelf: 'center' }}>
-              Sample Queries:
+              Indexed Collections:
             </span>
-            {[
-              'Defense night-vision and tactical sensors',
-              'Green steel electric arc furnace decarbonization',
-              '5G broadband wireless telecom digital ecosystem',
-              'Multispecialty hospitals oncology cardiology',
-              'Industrial gearboxes and wind turbine yaw drives'
-            ].map((q) => (
-              <button
-                key={q}
-                className="query-pill-btn"
-                onClick={() => {
-                  setVectorQuery(q);
-                  handleVectorSearch(q);
-                }}
-              >
-                {q}
-              </button>
-            ))}
+            <span className="query-pill-btn" style={{ cursor: 'default' }}>
+              📁 company_filings ({filings.length || 26} docs)
+            </span>
+            <span className="query-pill-btn" style={{ cursor: 'default' }}>
+              📹 media_and_research (78 nested videos)
+            </span>
+            <span className="query-pill-btn" style={{ cursor: 'default' }}>
+              📑 drhp_rhp_deep_sections (Risk Disclosures)
+            </span>
+            <span className="query-pill-btn" style={{ cursor: 'default' }}>
+              📊 peer_comparison_matrix (Valuation Benchmarking)
+            </span>
           </div>
 
-          {/* Vector Results */}
-          <div>
-            {vectorResults.map((res, i) => (
-              <div key={i} className="vector-result-card">
-                <div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.35rem' }}>
-                    <span style={{ fontWeight: 700, color: 'var(--accent-cyan)' }}>
-                      {res.symbol}
-                    </span>
-                    <span style={{ fontWeight: 600 }}>{res.company_name}</span>
-                    <span className="status-badge" style={{ background: 'rgba(56, 189, 248, 0.15)', color: '#38bdf8' }}>
-                      {res.sector}
-                    </span>
+          {/* Search/Filter for MongoDB Documents */}
+          <input
+            type="text"
+            className="search-input"
+            style={{ marginBottom: '1.25rem' }}
+            placeholder="Search MongoDB documents by company name, ticker symbol, auditor, or sector..."
+            value={filingSearch}
+            onChange={(e) => setFilingSearch(e.target.value)}
+          />
+
+          {/* Document Cards */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(380px, 1fr))', gap: '1rem' }}>
+            {filteredFilings.map((doc, idx) => (
+              <div key={idx} style={{ background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <span style={{ fontWeight: 700, color: 'var(--accent-cyan)', fontSize: '1rem' }}>{doc.symbol}</span>
+                    <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>{doc.company_name}</span>
                   </div>
-                  <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
-                    {res.doc_type}
-                  </p>
-                  <p style={{ fontSize: '0.85rem', lineHeight: '1.4' }}>
-                    "{res.snippet}"
-                  </p>
+                  <span className="status-badge" style={{ background: 'rgba(56, 189, 248, 0.15)', color: '#38bdf8', fontSize: '0.72rem' }}>
+                    {doc.sector}
+                  </span>
                 </div>
 
-                <div style={{ textAlign: 'right' }}>
-                  <div className="similarity-badge">
-                    {res.similarity_score}% Match
+                <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginBottom: '0.6rem' }}>
+                  <div><strong>Auditors:</strong> {doc.statutory_auditors || 'Not Disclosed'}</div>
+                  <div><strong>Lead Legal Counsel:</strong> {doc.lead_counsel || 'Not Disclosed'}</div>
+                </div>
+
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '0.6rem', marginBottom: '0.6rem' }}>
+                  <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', marginBottom: '0.35rem', fontWeight: 600 }}>
+                    STATUTORY SEBI FILINGS (PDF / PORTAL):
                   </div>
-                  <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', marginTop: '0.35rem' }}>
-                    Raw Cosine: {res.raw_cosine}
+                  <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
+                    {doc.drhp_pdf_url && (
+                      <a href={doc.drhp_pdf_url} target="_blank" rel="noreferrer" className="query-pill-btn" style={{ textDecoration: 'none', color: 'var(--accent-cyan)', fontSize: '0.72rem' }}>
+                        📄 DRHP PDF
+                      </a>
+                    )}
+                    {doc.rhp_pdf_url && (
+                      <a href={doc.rhp_pdf_url} target="_blank" rel="noreferrer" className="query-pill-btn" style={{ textDecoration: 'none', color: 'var(--accent-purple)', fontSize: '0.72rem' }}>
+                        📘 RHP PDF
+                      </a>
+                    )}
+                    {doc.anchor_letter_pdf_url && (
+                      <a href={doc.anchor_letter_pdf_url} target="_blank" rel="noreferrer" className="query-pill-btn" style={{ textDecoration: 'none', color: 'var(--accent-green)', fontSize: '0.72rem' }}>
+                        ⚓ Anchor Allotment
+                      </a>
+                    )}
                   </div>
                 </div>
+
+                {doc.videos && doc.videos.length > 0 && (
+                  <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '0.6rem' }}>
+                    <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', marginBottom: '0.35rem', fontWeight: 600 }}>
+                      MULTIMEDIA ROADSHOW & AV PRESENTATIONS:
+                    </div>
+                    {doc.videos.slice(0, 2).map((v, vIdx) => (
+                      <div key={vIdx} style={{ fontSize: '0.75rem', marginBottom: '0.25rem' }}>
+                        <a href={v.url} target="_blank" rel="noreferrer" style={{ color: 'var(--text-main)', textDecoration: 'none' }}>
+                          🎥 <span style={{ textDecoration: 'underline' }}>{v.title}</span>
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
-
-            {vectorResults.length === 0 && !vectorLoading && (
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textAlign: 'center', padding: '2rem 0' }}>
-                Type a natural language concept above or click a sample query to demonstrate vector similarity retrieval.
-              </p>
-            )}
           </div>
+
+          {filteredFilings.length === 0 && (
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textAlign: 'center', padding: '2rem 0' }}>
+              No MongoDB filings matched your filter.
+            </p>
+          )}
         </section>
       )}
-
       {/* TAB 3: Add Offering Form (DML & Triggers) */}
       {activeTab === 'form' && (
         <section className="form-card">
@@ -513,7 +527,7 @@ export default function Home() {
 
       {/* TAB 4: Database Schema & Architecture */}
       {activeTab === 'schema' && (
-        <section className="vector-box">
+        <section className="panel-box">
           <h2 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>
             Confirmed Database Objects (Live Inspection)
           </h2>

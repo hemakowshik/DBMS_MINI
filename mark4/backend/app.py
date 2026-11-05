@@ -1,11 +1,4 @@
 from werkzeug.security import check_password_hash, generate_password_hash
-try:
-    from .vector_engine import semantic_search
-except Exception:
-    try:
-        from vector_engine import semantic_search
-    except Exception:
-        semantic_search = None
 
 import re
 import os
@@ -146,8 +139,6 @@ def api_status():
         "active_triggers_count": trg_count,
         "active_views_count": view_count,
         "nosql_engine": "online" if mongo_ok else "offline",
-        "vector_engine": "online",
-        "vector_metric": "Cosine Similarity (Normalized Dot Product)",
         "auth_rbac": "enabled (Admin, Analyst, Investor)"
     })
 
@@ -885,40 +876,6 @@ def api_crawl_refresh():
         }), 200
 
 
-# ============================================================================
-# VECTOR DATABASE & SEMANTIC SEARCH (Requirement 8)
-# ============================================================================
-@app.route("/api/vector-search", methods=["GET", "POST"])
-def api_vector_search():
-    """Executes Cosine Similarity semantic search against unstructured prospectus documents."""
-    query = request.args.get("q", "")
-    if request.is_json and request.json:
-        query = request.json.get("query", query)
-    top_k = int(request.args.get("k", 5))
-    
-    if not query.strip():
-        return jsonify({
-            "status": "success",
-            "query": "",
-            "results": [],
-            "vector_model": "Dense Semantic Term-Vector Embedding Model (SEBI DRHP Corpus)",
-            "similarity_metric": "Cosine Similarity (Normalized Dot Product)"
-        })
-
-    try:
-        if semantic_search:
-            results = semantic_search(query, top_k=top_k)
-        else:
-            results = []
-        return jsonify({
-            "status": "success",
-            "query": query,
-            "total_matches": len(results),
-            "similarity_metric": "Cosine Similarity",
-            "results": results
-        })
-    except Exception as e:
-        return jsonify({"status": "error", "message": str(e)}), 200
 
 # ============================================================================
 # AUTHENTICATION & ROLE-BASED ACCESS CONTROL (Requirement 11 & 13)

@@ -1,6 +1,7 @@
 # IPOWatch Live Intelligence: DBMS Experiential Learning (Level 3 Project)
 **Course**: Database Management Systems (CS304 / UE23CS252)  
 **Faculty Evaluator / Course Instructor**: Dr. Nagasundari S, Department of AIML / CSE, PES University  
+**Syllabus Track Selected**: **Option 1: SQL Database (MySQL 8.0) + NoSQL Database (MongoDB 8.0)**  
 **Student Team**:
 1. **Hema Kowshik G** (SRN: PES1UG24AM106)
 2. **Team Member 2**  
@@ -14,10 +15,9 @@
 | Rubric Requirement | Implementation in MARK4 Platform | Reference Code / Object |
 |---|---|---|
 | **SQL Database (Mandatory)** | **MySQL 8.0+ / SQLite 3**: 10 BCNF tables, 3 Triggers, 2 Stored Procedures, 2 Stored Functions, 4 Views, 14 B-Tree Indexes. | `database/sql/00_mysql_master_deploy.sql`, `mark4/database/schema_live.sql` |
-| **NoSQL Database** | **MongoDB 8.0+**: 4 Collections (`company_filings`, `media_and_research`, `peer_comparison_matrix`, `drhp_rhp_deep_sections`). | `mark4/database/mongodb/` |
-| **Vector Database (Requirement 8)** | **Cosine Similarity Vector Store**: Semantic retrieval across unstructured DRHP/RHP Prospectus corpus. | `mark4/backend/vector_engine.py`, `/api/vector-search` |
+| **NoSQL Database (Mandatory - Option 1)** | **MongoDB 8.0+**: 4 Collections (`company_filings`, `media_and_research`, `peer_comparison_matrix`, `drhp_rhp_deep_sections`). | `mark4/database/mongodb/` |
 | **Web Frontend (Requirement 9)** | **Next.js 14 Web Application**: High-performance financial terminal with Role-Based Access Control, live market tables, and interactive DML forms. | `frontend_nextjs/` (`http://localhost:3000`) |
-| **Advanced Features (Req 7)** | **Transactions, Views, Stored Procedures, Triggers, Indexes, Vector Similarity, NoSQL Aggregation** (7 features). | `database/sql/05_stored_procedures_functions.sql` |
+| **Advanced Features (Req 7)** | **Transactions, Views, Stored Procedures, Triggers, Indexes, NoSQL Aggregation** (6 production features). | `database/sql/05_stored_procedures_functions.sql` |
 | **Auth & Security (Req 11, 13)** | **PBKDF2/SHA-256 Hashed Passwords**, Role-Based Access Control (`Admin`, `Analyst`, `Investor`), `.env` environment isolation. | `users` table, `/api/auth/login`, `.env.example` |
 
 ---
@@ -46,23 +46,24 @@ python C:\DBMS_MINI\mark4\crawl_now.py
 
 ### 4. Deploy Relational Database in MySQL 8.0
 ```powershell
-# In MySQL Workbench or MySQL CLI:
-mysql -u root -p < C:\DBMS_MINI\database\sql\00_mysql_master_deploy.sql
+# In PowerShell:
+Get-Content C:\DBMS_MINI\database\sql\00_mysql_master_deploy.sql | & "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p
 ```
 
 ---
 
 ## 🧪 Viva Demonstration Guide for Dr. Nagasundari S
 
-1. **Demonstrate Active Database Triggers**:
+1. **Option 1 Dual-Engine Architecture**:
+   - Explain to Dr. Nagasundari S: *"We chose Option 1 from your syllabus: MySQL 8.0 for ACID relational transactions and MongoDB 8.0 for unstructured SEBI prospectuses and multimedia roadshows."*
+2. **Demonstrate Active Database Triggers**:
    - Query live schema objects via browser: [`http://127.0.0.1:5003/api/database/schema-objects`](http://127.0.0.1:5003/api/database/schema-objects).
-   - Proves `trg_validate_price_band` and `trg_audit_ipo_status_change` are active inside `sqlite_master`.
-2. **Demonstrate Database Constraint Enforcement**:
-   - In Next.js app ("Add Offering" tab) or via curl: enter Min Price = ₹500 and Max Price = ₹400.
+   - Proves `trg_validate_price_band` and `trg_audit_ipo_status_change` are active inside `sqlite_master` / MySQL.
+3. **Demonstrate Database Constraint Enforcement**:
+   - In Next.js app ("Add Offering" tab): enter Min Price = ₹500 and Max Price = ₹400.
    - The trigger aborts with: `Integrity Violation: price_band_max cannot be strictly less than price_band_min`.
-3. **Demonstrate Vector Semantic Search (Requirement 8)**:
-   - Go to "Vector DB Semantic Search" tab in Next.js or query:
-     `GET /api/vector-search?q=defense+night+vision+electro+optics`
-   - Returns **Tonbo Imaging India (TONBO)** with **38.76% Cosine Similarity** without keyword matching!
-4. **Demonstrate Role-Based Access Control**:
+4. **Demonstrate NoSQL Document Lake (MongoDB)**:
+   - Click **"NoSQL Document Lake (MongoDB)"** tab in Next.js or query `GET /api/filings`.
+   - Shows polymorphic documents: SEBI DRHP PDFs, RHP PDFs, anchor allotment letters, auditor disclosures, and direct video walkthrough links.
+5. **Demonstrate Role-Based Access Control**:
    - Switch between **Admin**, **Analyst**, and **Investor** to demonstrate authorization boundaries.

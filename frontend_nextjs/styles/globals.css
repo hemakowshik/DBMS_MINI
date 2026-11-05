@@ -263,7 +263,8 @@ tr:hover td {
 .status-upcoming { background: rgba(56, 189, 248, 0.2); color: #38bdf8; }
 .status-completed { background: rgba(168, 85, 247, 0.2); color: #c084fc; }
 
-/* Vector Search UI */
+/* Panel Card Container */
+.panel-box,
 .vector-box {
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);

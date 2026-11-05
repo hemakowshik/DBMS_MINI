@@ -14,9 +14,6 @@ MYSQL_DB = os.environ.get("MYSQL_DB", "ipo_intelligence_db")
 MONGO_URI = os.environ.get("MONGO_URI", "mongodb://localhost:27017/")
 MONGO_DB_NAME = os.environ.get("MONGO_DB_NAME", "ipo_nosql_mark4_db")
 
-# Vector Database Settings
-VECTOR_STORE_PATH = os.environ.get("VECTOR_STORE_PATH", os.path.join(BASE_DIR, "data", "vector_store.json"))
-
 # Security & Secrets
 SECRET_KEY = os.environ.get("SECRET_KEY", "pes-aiml-dbms-level3-secret-key-2026")
 

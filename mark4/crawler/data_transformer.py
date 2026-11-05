@@ -16,15 +16,21 @@ MONGO_URI = "mongodb://localhost:27017/"
 MONGO_DB_NAME = "ipo_nosql_mark4_db"
 
 def init_live_db():
-    """Initializes clean schema for the live database."""
+    """Initializes clean schema for the live database with tables, views, indexes, and triggers."""
     os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     with open(SCHEMA_PATH, 'r', encoding='utf-8') as f:
         schema_sql = f.read()
     conn.executescript(schema_sql)
+
+    vti_path = os.path.join(os.path.dirname(SCHEMA_PATH), "sql", "03_views_triggers_indexes.sql")
+    if os.path.exists(vti_path):
+        with open(vti_path, 'r', encoding='utf-8') as f:
+            conn.executescript(f.read())
+
     conn.commit()
     conn.close()
-    print("[PIPELINE] Relational SQLite schema initialized.")
+    print("[PIPELINE] Relational SQLite schema initialized with tables, views, indexes, and triggers.")
 
 def get_mongo_db():
     try:

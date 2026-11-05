@@ -9,14 +9,14 @@ db = db.getSiblingDB('ipo_intelligence_db');
 print('[SEEDING] Inserting 26 documents into company_filings...');
 db.company_filings.insertMany([
   {
-    "symbol": "MAXWELL",
-    "company_name": "Maxwell Engineering Solutions",
-    "segment": "SME",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/maxwell_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/maxwell_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/maxwell_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/maxwell_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/maxwell_anchor_book.pdf",
+    "symbol": "BOMBAYCOAT",
+    "company_name": "Bombay Coated & Special Steels",
+    "segment": "Mainboard",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/bombaycoat_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/bombaycoat_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/bombaycoat_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/bombaycoat_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/bombaycoat_anchor_book.pdf",
     "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
     "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
@@ -39,14 +39,29 @@ db.company_filings.insertMany([
     "last_synced": "2026-11-01T18:00:00Z"
   },
   {
-    "symbol": "BOMBAYCOAT",
-    "company_name": "Bombay Coated & Special Steels",
+    "symbol": "MAXWELL",
+    "company_name": "Maxwell Engineering Solutions",
+    "segment": "SME",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/maxwell_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/maxwell_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/maxwell_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/maxwell_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/maxwell_anchor_book.pdf",
+    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
+    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
+    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
+    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
+    "last_synced": "2026-11-01T18:00:00Z"
+  },
+  {
+    "symbol": "SFCENV",
+    "company_name": "SFC Environmental Technologies",
     "segment": "Mainboard",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/bombaycoat_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/bombaycoat_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/bombaycoat_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/bombaycoat_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/bombaycoat_anchor_book.pdf",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/sfcenv_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/sfcenv_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/sfcenv_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/sfcenv_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/sfcenv_anchor_book.pdf",
     "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
     "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
@@ -77,6 +92,21 @@ db.company_filings.insertMany([
     "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/eaaa_drhp_management_av.mp4",
     "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/eaaa_rhp_management_av.mp4",
     "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/eaaa_anchor_book.pdf",
+    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
+    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
+    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
+    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
+    "last_synced": "2026-11-01T18:00:00Z"
+  },
+  {
+    "symbol": "PARAS",
+    "company_name": "Paras Healthcare",
+    "segment": "Mainboard",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/paras_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/paras_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/paras_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/paras_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/paras_anchor_book.pdf",
     "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
     "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
@@ -129,6 +159,36 @@ db.company_filings.insertMany([
     "last_synced": "2026-11-01T18:00:00Z"
   },
   {
+    "symbol": "FUSIONCX",
+    "company_name": "Fusion CX",
+    "segment": "Mainboard",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/fusioncx_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/fusioncx_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/fusioncx_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/fusioncx_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/fusioncx_anchor_book.pdf",
+    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
+    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
+    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
+    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
+    "last_synced": "2026-11-01T18:00:00Z"
+  },
+  {
+    "symbol": "HDFIRE",
+    "company_name": "HD Fire Protect",
+    "segment": "Mainboard",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/hdfire_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/hdfire_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/hdfire_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/hdfire_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/hdfire_anchor_book.pdf",
+    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
+    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
+    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
+    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
+    "last_synced": "2026-11-01T18:00:00Z"
+  },
+  {
     "symbol": "BONFIG",
     "company_name": "Bonfiglioli Transmissions",
     "segment": "Mainboard",
@@ -159,6 +219,21 @@ db.company_filings.insertMany([
     "last_synced": "2026-11-01T18:00:00Z"
   },
   {
+    "symbol": "HGSINDIA",
+    "company_name": "HGS (India)",
+    "segment": "SME",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/hgsindia_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/hgsindia_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/hgsindia_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/hgsindia_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/hgsindia_anchor_book.pdf",
+    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
+    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
+    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
+    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
+    "last_synced": "2026-11-01T18:00:00Z"
+  },
+  {
     "symbol": "VEDANT",
     "company_name": "Vedant Poly Fabs",
     "segment": "SME",
@@ -174,14 +249,14 @@ db.company_filings.insertMany([
     "last_synced": "2026-11-01T18:00:00Z"
   },
   {
-    "symbol": "HGSINDIA",
-    "company_name": "HGS (India)",
+    "symbol": "JOHNSON",
+    "company_name": "Johnsoncab Electricals",
     "segment": "SME",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/hgsindia_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/hgsindia_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/hgsindia_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/hgsindia_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/hgsindia_anchor_book.pdf",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/johnson_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/johnson_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/johnson_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/johnson_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/johnson_anchor_book.pdf",
     "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
     "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
@@ -219,21 +294,6 @@ db.company_filings.insertMany([
     "last_synced": "2026-11-01T18:00:00Z"
   },
   {
-    "symbol": "NITYASGEM",
-    "company_name": "Nityas Gems & Jewellery",
-    "segment": "Mainboard",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/nityasgem_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/nityasgem_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/nityasgem_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/nityasgem_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/nityasgem_anchor_book.pdf",
-    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
-    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
-    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
-    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
-    "last_synced": "2026-11-01T18:00:00Z"
-  },
-  {
     "symbol": "VISHALNIR",
     "company_name": "Vishal Nirmiti",
     "segment": "Mainboard",
@@ -242,6 +302,21 @@ db.company_filings.insertMany([
     "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/vishalnir_drhp_management_av.mp4",
     "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/vishalnir_rhp_management_av.mp4",
     "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/vishalnir_anchor_book.pdf",
+    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
+    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
+    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
+    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
+    "last_synced": "2026-11-01T18:00:00Z"
+  },
+  {
+    "symbol": "NITYASGEM",
+    "company_name": "Nityas Gems & Jewellery",
+    "segment": "Mainboard",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/nityasgem_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/nityasgem_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/nityasgem_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/nityasgem_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/nityasgem_anchor_book.pdf",
     "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
     "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
@@ -322,106 +397,31 @@ db.company_filings.insertMany([
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
     "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
     "last_synced": "2026-11-01T18:00:00Z"
-  },
-  {
-    "symbol": "PARAS",
-    "company_name": "Paras Healthcare",
-    "segment": "Mainboard",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/paras_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/paras_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/paras_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/paras_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/paras_anchor_book.pdf",
-    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
-    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
-    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
-    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
-    "last_synced": "2026-11-01T18:00:00Z"
-  },
-  {
-    "symbol": "SFCENV",
-    "company_name": "SFC Environmental Technologies",
-    "segment": "Mainboard",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/sfcenv_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/sfcenv_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/sfcenv_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/sfcenv_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/sfcenv_anchor_book.pdf",
-    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
-    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
-    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
-    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
-    "last_synced": "2026-11-01T18:00:00Z"
-  },
-  {
-    "symbol": "FUSIONCX",
-    "company_name": "Fusion CX",
-    "segment": "Mainboard",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/fusioncx_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/fusioncx_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/fusioncx_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/fusioncx_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/fusioncx_anchor_book.pdf",
-    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
-    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
-    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
-    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
-    "last_synced": "2026-11-01T18:00:00Z"
-  },
-  {
-    "symbol": "HDFIRE",
-    "company_name": "HD Fire Protect",
-    "segment": "Mainboard",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/hdfire_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/hdfire_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/hdfire_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/hdfire_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/hdfire_anchor_book.pdf",
-    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
-    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
-    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
-    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
-    "last_synced": "2026-11-01T18:00:00Z"
-  },
-  {
-    "symbol": "JOHNSON",
-    "company_name": "Johnsoncab Electricals",
-    "segment": "SME",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/johnson_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/johnson_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/johnson_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/johnson_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/johnson_anchor_book.pdf",
-    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
-    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
-    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
-    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
-    "last_synced": "2026-11-01T18:00:00Z"
   }
 ]);
 
 print('[SEEDING] Inserting 26 documents into media_and_research...');
 db.media_and_research.insertMany([
   {
-    "symbol": "MAXWELL",
-    "company_name": "Maxwell Engineering Solutions",
+    "symbol": "BOMBAYCOAT",
+    "company_name": "Bombay Coated & Special Steels",
     "analyst_reviews": [
       {
         "channel": "Chittorgarh IPO Watch",
-        "title": "Maxwell Engineering Solutions IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=maxwell+ipo+analysis"
+        "title": "Bombay Coated & Special Steels IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=bombaycoat+ipo+analysis"
       },
       {
         "channel": "Market Express Terminal",
-        "title": "Maxwell Engineering Solutions Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=maxwell+ipo+valuation"
+        "title": "Bombay Coated & Special Steels Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=bombaycoat+ipo+valuation"
       }
     ],
     "executive_interviews": [
       {
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=maxwell+management+interview"
+        "url": "https://www.youtube.com/results?search_query=bombaycoat+management+interview"
       }
     ]
   },
@@ -449,25 +449,48 @@ db.media_and_research.insertMany([
     ]
   },
   {
-    "symbol": "BOMBAYCOAT",
-    "company_name": "Bombay Coated & Special Steels",
+    "symbol": "MAXWELL",
+    "company_name": "Maxwell Engineering Solutions",
     "analyst_reviews": [
       {
         "channel": "Chittorgarh IPO Watch",
-        "title": "Bombay Coated & Special Steels IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=bombaycoat+ipo+analysis"
+        "title": "Maxwell Engineering Solutions IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=maxwell+ipo+analysis"
       },
       {
         "channel": "Market Express Terminal",
-        "title": "Bombay Coated & Special Steels Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=bombaycoat+ipo+valuation"
+        "title": "Maxwell Engineering Solutions Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=maxwell+ipo+valuation"
       }
     ],
     "executive_interviews": [
       {
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=bombaycoat+management+interview"
+        "url": "https://www.youtube.com/results?search_query=maxwell+management+interview"
+      }
+    ]
+  },
+  {
+    "symbol": "SFCENV",
+    "company_name": "SFC Environmental Technologies",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "SFC Environmental Technologies IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=sfcenv+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "SFC Environmental Technologies Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=sfcenv+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=sfcenv+management+interview"
       }
     ]
   },
@@ -514,6 +537,29 @@ db.media_and_research.insertMany([
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
         "url": "https://www.youtube.com/results?search_query=eaaa+management+interview"
+      }
+    ]
+  },
+  {
+    "symbol": "PARAS",
+    "company_name": "Paras Healthcare",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "Paras Healthcare IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=paras+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "Paras Healthcare Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=paras+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=paras+management+interview"
       }
     ]
   },
@@ -587,6 +633,52 @@ db.media_and_research.insertMany([
     ]
   },
   {
+    "symbol": "FUSIONCX",
+    "company_name": "Fusion CX",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "Fusion CX IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=fusioncx+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "Fusion CX Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=fusioncx+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=fusioncx+management+interview"
+      }
+    ]
+  },
+  {
+    "symbol": "HDFIRE",
+    "company_name": "HD Fire Protect",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "HD Fire Protect IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=hdfire+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "HD Fire Protect Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=hdfire+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=hdfire+management+interview"
+      }
+    ]
+  },
+  {
     "symbol": "BONFIG",
     "company_name": "Bonfiglioli Transmissions",
     "analyst_reviews": [
@@ -633,6 +725,29 @@ db.media_and_research.insertMany([
     ]
   },
   {
+    "symbol": "HGSINDIA",
+    "company_name": "HGS (India)",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "HGS (India) IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=hgsindia+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "HGS (India) Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=hgsindia+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=hgsindia+management+interview"
+      }
+    ]
+  },
+  {
     "symbol": "VEDANT",
     "company_name": "Vedant Poly Fabs",
     "analyst_reviews": [
@@ -656,25 +771,25 @@ db.media_and_research.insertMany([
     ]
   },
   {
-    "symbol": "HGSINDIA",
-    "company_name": "HGS (India)",
+    "symbol": "JOHNSON",
+    "company_name": "Johnsoncab Electricals",
     "analyst_reviews": [
       {
         "channel": "Chittorgarh IPO Watch",
-        "title": "HGS (India) IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=hgsindia+ipo+analysis"
+        "title": "Johnsoncab Electricals IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=johnson+ipo+analysis"
       },
       {
         "channel": "Market Express Terminal",
-        "title": "HGS (India) Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=hgsindia+ipo+valuation"
+        "title": "Johnsoncab Electricals Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=johnson+ipo+valuation"
       }
     ],
     "executive_interviews": [
       {
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=hgsindia+management+interview"
+        "url": "https://www.youtube.com/results?search_query=johnson+management+interview"
       }
     ]
   },
@@ -725,29 +840,6 @@ db.media_and_research.insertMany([
     ]
   },
   {
-    "symbol": "NITYASGEM",
-    "company_name": "Nityas Gems & Jewellery",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "Nityas Gems & Jewellery IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=nityasgem+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "Nityas Gems & Jewellery Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=nityasgem+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=nityasgem+management+interview"
-      }
-    ]
-  },
-  {
     "symbol": "VISHALNIR",
     "company_name": "Vishal Nirmiti",
     "analyst_reviews": [
@@ -767,6 +859,29 @@ db.media_and_research.insertMany([
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
         "url": "https://www.youtube.com/results?search_query=vishalnir+management+interview"
+      }
+    ]
+  },
+  {
+    "symbol": "NITYASGEM",
+    "company_name": "Nityas Gems & Jewellery",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "Nityas Gems & Jewellery IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=nityasgem+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "Nityas Gems & Jewellery Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=nityasgem+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=nityasgem+management+interview"
       }
     ]
   },
@@ -884,130 +999,15 @@ db.media_and_research.insertMany([
         "url": "https://www.youtube.com/results?search_query=germangre+management+interview"
       }
     ]
-  },
-  {
-    "symbol": "PARAS",
-    "company_name": "Paras Healthcare",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "Paras Healthcare IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=paras+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "Paras Healthcare Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=paras+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=paras+management+interview"
-      }
-    ]
-  },
-  {
-    "symbol": "SFCENV",
-    "company_name": "SFC Environmental Technologies",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "SFC Environmental Technologies IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=sfcenv+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "SFC Environmental Technologies Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=sfcenv+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=sfcenv+management+interview"
-      }
-    ]
-  },
-  {
-    "symbol": "FUSIONCX",
-    "company_name": "Fusion CX",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "Fusion CX IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=fusioncx+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "Fusion CX Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=fusioncx+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=fusioncx+management+interview"
-      }
-    ]
-  },
-  {
-    "symbol": "HDFIRE",
-    "company_name": "HD Fire Protect",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "HD Fire Protect IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=hdfire+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "HD Fire Protect Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=hdfire+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=hdfire+management+interview"
-      }
-    ]
-  },
-  {
-    "symbol": "JOHNSON",
-    "company_name": "Johnsoncab Electricals",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "Johnsoncab Electricals IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=johnson+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "Johnsoncab Electricals Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=johnson+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=johnson+management+interview"
-      }
-    ]
   }
 ]);
 
 print('[SEEDING] Inserting 26 documents into peer_comparison_matrix...');
 db.peer_comparison_matrix.insertMany([
   {
-    "symbol": "MAXWELL",
-    "company_name": "Maxwell Engineering Solutions",
-    "sector": "Other Industrial Products",
+    "symbol": "BOMBAYCOAT",
+    "company_name": "Bombay Coated & Special Steels",
+    "sector": "Iron & Steel Products",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -1051,9 +1051,32 @@ db.peer_comparison_matrix.insertMany([
     ]
   },
   {
-    "symbol": "BOMBAYCOAT",
-    "company_name": "Bombay Coated & Special Steels",
-    "sector": "Iron & Steel Products",
+    "symbol": "MAXWELL",
+    "company_name": "Maxwell Engineering Solutions",
+    "sector": "Other Industrial Products",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "SFCENV",
+    "company_name": "SFC Environmental Technologies",
+    "sector": "Diversified Financial Services",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -1100,6 +1123,29 @@ db.peer_comparison_matrix.insertMany([
     "symbol": "EAAA",
     "company_name": "EAAA India Alternatives",
     "sector": "Asset Management Company",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "PARAS",
+    "company_name": "Paras Healthcare",
+    "sector": "Hospital",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -1189,6 +1235,52 @@ db.peer_comparison_matrix.insertMany([
     ]
   },
   {
+    "symbol": "FUSIONCX",
+    "company_name": "Fusion CX",
+    "sector": "Diversified Financial Services",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "HDFIRE",
+    "company_name": "HD Fire Protect",
+    "sector": "Industrial Products",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
     "symbol": "BONFIG",
     "company_name": "Bonfiglioli Transmissions",
     "sector": "Industrial Products",
@@ -1235,6 +1327,29 @@ db.peer_comparison_matrix.insertMany([
     ]
   },
   {
+    "symbol": "HGSINDIA",
+    "company_name": "HGS (India)",
+    "sector": "Diversified Financial Services",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
     "symbol": "VEDANT",
     "company_name": "Vedant Poly Fabs",
     "sector": "Packaging",
@@ -1258,9 +1373,9 @@ db.peer_comparison_matrix.insertMany([
     ]
   },
   {
-    "symbol": "HGSINDIA",
-    "company_name": "HGS (India)",
-    "sector": "Diversified Financial Services",
+    "symbol": "JOHNSON",
+    "company_name": "Johnsoncab Electricals",
+    "sector": "Cables - Electricals",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -1327,29 +1442,6 @@ db.peer_comparison_matrix.insertMany([
     ]
   },
   {
-    "symbol": "NITYASGEM",
-    "company_name": "Nityas Gems & Jewellery",
-    "sector": "Gems, Jewellery And Watches",
-    "peers": [
-      {
-        "company": "Titan Company Limited",
-        "p_e": 82.1,
-        "ronw_pct": 29.5,
-        "eps": 39.8,
-        "revenue_cr": 51080.0,
-        "custom_metric": "Retail_Store_Count: 3100"
-      },
-      {
-        "company": "Kalyan Jewellers India Limited",
-        "p_e": 64.3,
-        "ronw_pct": 19.1,
-        "eps": 9.4,
-        "revenue_cr": 18500.0,
-        "custom_metric": "Same_Store_Sales_Growth: 18%"
-      }
-    ]
-  },
-  {
     "symbol": "VISHALNIR",
     "company_name": "Vishal Nirmiti",
     "sector": "Civil Construction",
@@ -1369,6 +1461,29 @@ db.peer_comparison_matrix.insertMany([
         "eps": 18.5,
         "revenue_cr": 4500.0,
         "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "NITYASGEM",
+    "company_name": "Nityas Gems & Jewellery",
+    "sector": "Gems, Jewellery And Watches",
+    "peers": [
+      {
+        "company": "Titan Company Limited",
+        "p_e": 82.1,
+        "ronw_pct": 29.5,
+        "eps": 39.8,
+        "revenue_cr": 51080.0,
+        "custom_metric": "Retail_Store_Count: 3100"
+      },
+      {
+        "company": "Kalyan Jewellers India Limited",
+        "p_e": 64.3,
+        "ronw_pct": 19.1,
+        "eps": 9.4,
+        "revenue_cr": 18500.0,
+        "custom_metric": "Same_Store_Sales_Growth: 18%"
       }
     ]
   },
@@ -1486,130 +1601,15 @@ db.peer_comparison_matrix.insertMany([
         "custom_metric": "EBITDA_Margin: 19.5%"
       }
     ]
-  },
-  {
-    "symbol": "PARAS",
-    "company_name": "Paras Healthcare",
-    "sector": "Hospital",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "SFCENV",
-    "company_name": "SFC Environmental Technologies",
-    "sector": "Diversified Financial Services",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "FUSIONCX",
-    "company_name": "Fusion CX",
-    "sector": "Diversified Financial Services",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "HDFIRE",
-    "company_name": "HD Fire Protect",
-    "sector": "Industrial Products",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "JOHNSON",
-    "company_name": "Johnsoncab Electricals",
-    "sector": "Cables - Electricals",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
   }
 ]);
 
 print('[SEEDING] Inserting 26 documents into drhp_rhp_deep_sections...');
 db.drhp_rhp_deep_sections.insertMany([
   {
-    "symbol": "MAXWELL",
-    "company_name": "Maxwell Engineering Solutions",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Other Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "BOMBAYCOAT",
+    "company_name": "Bombay Coated & Special Steels",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Iron & Steel Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -1633,9 +1633,22 @@ db.drhp_rhp_deep_sections.insertMany([
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "BOMBAYCOAT",
-    "company_name": "Bombay Coated & Special Steels",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Iron & Steel Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "MAXWELL",
+    "company_name": "Maxwell Engineering Solutions",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Other Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
+    "symbol": "SFCENV",
+    "company_name": "SFC Environmental Technologies",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -1662,6 +1675,19 @@ db.drhp_rhp_deep_sections.insertMany([
     "symbol": "EAAA",
     "company_name": "EAAA India Alternatives",
     "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Asset Management Company. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
+    "symbol": "PARAS",
+    "company_name": "Paras Healthcare",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Hospital. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -1711,6 +1737,32 @@ db.drhp_rhp_deep_sections.insertMany([
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
+    "symbol": "FUSIONCX",
+    "company_name": "Fusion CX",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
+    "symbol": "HDFIRE",
+    "company_name": "HD Fire Protect",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
     "symbol": "BONFIG",
     "company_name": "Bonfiglioli Transmissions",
     "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
@@ -1737,6 +1789,19 @@ db.drhp_rhp_deep_sections.insertMany([
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
+    "symbol": "HGSINDIA",
+    "company_name": "HGS (India)",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
     "symbol": "VEDANT",
     "company_name": "Vedant Poly Fabs",
     "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Packaging. Exposure to foreign exchange fluctuations on imported capital machinery.",
@@ -1750,9 +1815,9 @@ db.drhp_rhp_deep_sections.insertMany([
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "HGSINDIA",
-    "company_name": "HGS (India)",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "JOHNSON",
+    "company_name": "Johnsoncab Electricals",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Cables - Electricals. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -1789,9 +1854,9 @@ db.drhp_rhp_deep_sections.insertMany([
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "NITYASGEM",
-    "company_name": "Nityas Gems & Jewellery",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Gems, Jewellery And Watches. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "VISHALNIR",
+    "company_name": "Vishal Nirmiti",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Civil Construction. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -1802,9 +1867,9 @@ db.drhp_rhp_deep_sections.insertMany([
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "VISHALNIR",
-    "company_name": "Vishal Nirmiti",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Civil Construction. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "NITYASGEM",
+    "company_name": "Nityas Gems & Jewellery",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Gems, Jewellery And Watches. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -1870,71 +1935,6 @@ db.drhp_rhp_deep_sections.insertMany([
     "symbol": "GERMANGRE",
     "company_name": "German Green Steel & Power",
     "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Iron & Steel Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
-  {
-    "symbol": "PARAS",
-    "company_name": "Paras Healthcare",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Hospital. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
-  {
-    "symbol": "SFCENV",
-    "company_name": "SFC Environmental Technologies",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
-  {
-    "symbol": "FUSIONCX",
-    "company_name": "Fusion CX",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
-  {
-    "symbol": "HDFIRE",
-    "company_name": "HD Fire Protect",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
-  {
-    "symbol": "JOHNSON",
-    "company_name": "Johnsoncab Electricals",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Cables - Electricals. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",

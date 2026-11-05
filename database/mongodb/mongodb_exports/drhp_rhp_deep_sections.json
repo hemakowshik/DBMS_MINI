@@ -1,8 +1,8 @@
 [
   {
-    "symbol": "MAXWELL",
-    "company_name": "Maxwell Engineering Solutions",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Other Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "BOMBAYCOAT",
+    "company_name": "Bombay Coated & Special Steels",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Iron & Steel Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -26,9 +26,22 @@
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "BOMBAYCOAT",
-    "company_name": "Bombay Coated & Special Steels",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Iron & Steel Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "MAXWELL",
+    "company_name": "Maxwell Engineering Solutions",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Other Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
+    "symbol": "SFCENV",
+    "company_name": "SFC Environmental Technologies",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -55,6 +68,19 @@
     "symbol": "EAAA",
     "company_name": "EAAA India Alternatives",
     "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Asset Management Company. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
+    "symbol": "PARAS",
+    "company_name": "Paras Healthcare",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Hospital. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -104,6 +130,32 @@
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
+    "symbol": "FUSIONCX",
+    "company_name": "Fusion CX",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
+    "symbol": "HDFIRE",
+    "company_name": "HD Fire Protect",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
     "symbol": "BONFIG",
     "company_name": "Bonfiglioli Transmissions",
     "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
@@ -130,6 +182,19 @@
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
+    "symbol": "HGSINDIA",
+    "company_name": "HGS (India)",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
     "symbol": "VEDANT",
     "company_name": "Vedant Poly Fabs",
     "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Packaging. Exposure to foreign exchange fluctuations on imported capital machinery.",
@@ -143,9 +208,9 @@
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "HGSINDIA",
-    "company_name": "HGS (India)",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "JOHNSON",
+    "company_name": "Johnsoncab Electricals",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Cables - Electricals. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -182,9 +247,9 @@
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "NITYASGEM",
-    "company_name": "Nityas Gems & Jewellery",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Gems, Jewellery And Watches. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "VISHALNIR",
+    "company_name": "Vishal Nirmiti",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Civil Construction. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -195,9 +260,9 @@
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "VISHALNIR",
-    "company_name": "Vishal Nirmiti",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Civil Construction. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "NITYASGEM",
+    "company_name": "Nityas Gems & Jewellery",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Gems, Jewellery And Watches. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -263,71 +328,6 @@
     "symbol": "GERMANGRE",
     "company_name": "German Green Steel & Power",
     "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Iron & Steel Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
-  {
-    "symbol": "PARAS",
-    "company_name": "Paras Healthcare",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Hospital. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
-  {
-    "symbol": "SFCENV",
-    "company_name": "SFC Environmental Technologies",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
-  {
-    "symbol": "FUSIONCX",
-    "company_name": "Fusion CX",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
-  {
-    "symbol": "HDFIRE",
-    "company_name": "HD Fire Protect",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
-  {
-    "symbol": "JOHNSON",
-    "company_name": "Johnsoncab Electricals",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Cables - Electricals. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",

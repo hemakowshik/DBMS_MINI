@@ -42,6 +42,23 @@ def ensure_database_initialized():
             conn.close()
         except Exception:
             needs_init = True
+
+        # Guarantee triggers and views are active even if tables already existed
+        if not needs_init:
+            try:
+                conn = sqlite3.connect(db_file)
+                c = conn.cursor()
+                trg_cnt = c.execute("SELECT count(*) FROM sqlite_master WHERE type='trigger'").fetchone()[0]
+                if trg_cnt == 0:
+                    vti_path = os.path.join(os.path.dirname(db_file), "sql", "03_views_triggers_indexes.sql")
+                    if os.path.exists(vti_path):
+                        with open(vti_path, 'r', encoding='utf-8') as f:
+                            c.executescript(f.read())
+                        conn.commit()
+                        print("[STARTUP] Active triggers and views installed into SQLite database.")
+                conn.close()
+            except Exception as e:
+                print(f"[STARTUP] Trigger init notice: {e}")
     
     if needs_init:
         print("[STARTUP] Bootstrapping SQLite database with live primary market crawl...")
@@ -64,16 +81,57 @@ except Exception as e:
 def index():
     return render_template("index.html")
 
+
+@app.route("/api/database/schema-objects")
+def api_schema_objects():
+    """Returns active database objects (tables, views, triggers, indexes) confirmed in sqlite_master."""
+    conn, engine = get_db_connection()
+    try:
+        cursor = conn.cursor()
+        triggers = cursor.execute("SELECT name, tbl_name, sql FROM sqlite_master WHERE type='trigger'").fetchall()
+        views = cursor.execute("SELECT name, tbl_name, sql FROM sqlite_master WHERE type='view'").fetchall()
+        tables = cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'").fetchall()
+        indexes = cursor.execute("SELECT name, tbl_name FROM sqlite_master WHERE type='index' AND name NOT LIKE 'sqlite_%'").fetchall()
+        return jsonify({
+            "status": "success",
+            "relational_engine": engine,
+            "database_file": config.SQLITE_DB_PATH,
+            "summary": {
+                "tables_count": len(tables),
+                "views_count": len(views),
+                "triggers_count": len(triggers),
+                "indexes_count": len(indexes)
+            },
+            "triggers": [{"name": t[0], "tbl_name": t[1], "sql": t[2]} for t in triggers],
+            "views": [{"name": v[0], "tbl_name": v[1], "sql": v[2]} for v in views],
+            "tables": [t[0] for t in tables]
+        })
+    finally:
+        conn.close()
+
 @app.route("/api/status")
 def api_status():
-    _, engine = get_db_connection()
+    conn, engine = get_db_connection()
+    trg_count = 0
+    view_count = 0
+    try:
+        c = conn.cursor()
+        trg_count = c.execute("SELECT count(*) FROM sqlite_master WHERE type='trigger'").fetchone()[0]
+        view_count = c.execute("SELECT count(*) FROM sqlite_master WHERE type='view'").fetchone()[0]
+    except Exception:
+        pass
+    finally:
+        conn.close()
+
     mongo_ok = get_nosql_db() is not None
     return jsonify({
         "status": "online",
-        "system": "IPOWatch Live Terminal v3.0 (Real Scraped Market Data)",
+        "system": "IPOWatch Live Terminal MARK4 (Polyglot RDBMS + NoSQL)",
         "feed": "Live Indian Primary Markets",
         "last_crawled": LAST_CRAWL_TIMESTAMP,
         "relational_engine": engine,
+        "active_triggers_count": trg_count,
+        "active_views_count": view_count,
         "nosql_engine": "online" if mongo_ok else "offline"
     })
 

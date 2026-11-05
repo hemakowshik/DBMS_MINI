@@ -1,24 +1,24 @@
 [
   {
-    "symbol": "MAXWELL",
-    "company_name": "Maxwell Engineering Solutions",
+    "symbol": "BOMBAYCOAT",
+    "company_name": "Bombay Coated & Special Steels",
     "analyst_reviews": [
       {
         "channel": "Chittorgarh IPO Watch",
-        "title": "Maxwell Engineering Solutions IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=maxwell+ipo+analysis"
+        "title": "Bombay Coated & Special Steels IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=bombaycoat+ipo+analysis"
       },
       {
         "channel": "Market Express Terminal",
-        "title": "Maxwell Engineering Solutions Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=maxwell+ipo+valuation"
+        "title": "Bombay Coated & Special Steels Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=bombaycoat+ipo+valuation"
       }
     ],
     "executive_interviews": [
       {
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=maxwell+management+interview"
+        "url": "https://www.youtube.com/results?search_query=bombaycoat+management+interview"
       }
     ]
   },
@@ -46,25 +46,48 @@
     ]
   },
   {
-    "symbol": "BOMBAYCOAT",
-    "company_name": "Bombay Coated & Special Steels",
+    "symbol": "MAXWELL",
+    "company_name": "Maxwell Engineering Solutions",
     "analyst_reviews": [
       {
         "channel": "Chittorgarh IPO Watch",
-        "title": "Bombay Coated & Special Steels IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=bombaycoat+ipo+analysis"
+        "title": "Maxwell Engineering Solutions IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=maxwell+ipo+analysis"
       },
       {
         "channel": "Market Express Terminal",
-        "title": "Bombay Coated & Special Steels Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=bombaycoat+ipo+valuation"
+        "title": "Maxwell Engineering Solutions Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=maxwell+ipo+valuation"
       }
     ],
     "executive_interviews": [
       {
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=bombaycoat+management+interview"
+        "url": "https://www.youtube.com/results?search_query=maxwell+management+interview"
+      }
+    ]
+  },
+  {
+    "symbol": "SFCENV",
+    "company_name": "SFC Environmental Technologies",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "SFC Environmental Technologies IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=sfcenv+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "SFC Environmental Technologies Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=sfcenv+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=sfcenv+management+interview"
       }
     ]
   },
@@ -111,6 +134,29 @@
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
         "url": "https://www.youtube.com/results?search_query=eaaa+management+interview"
+      }
+    ]
+  },
+  {
+    "symbol": "PARAS",
+    "company_name": "Paras Healthcare",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "Paras Healthcare IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=paras+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "Paras Healthcare Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=paras+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=paras+management+interview"
       }
     ]
   },
@@ -184,6 +230,52 @@
     ]
   },
   {
+    "symbol": "FUSIONCX",
+    "company_name": "Fusion CX",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "Fusion CX IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=fusioncx+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "Fusion CX Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=fusioncx+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=fusioncx+management+interview"
+      }
+    ]
+  },
+  {
+    "symbol": "HDFIRE",
+    "company_name": "HD Fire Protect",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "HD Fire Protect IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=hdfire+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "HD Fire Protect Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=hdfire+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=hdfire+management+interview"
+      }
+    ]
+  },
+  {
     "symbol": "BONFIG",
     "company_name": "Bonfiglioli Transmissions",
     "analyst_reviews": [
@@ -230,6 +322,29 @@
     ]
   },
   {
+    "symbol": "HGSINDIA",
+    "company_name": "HGS (India)",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "HGS (India) IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=hgsindia+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "HGS (India) Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=hgsindia+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=hgsindia+management+interview"
+      }
+    ]
+  },
+  {
     "symbol": "VEDANT",
     "company_name": "Vedant Poly Fabs",
     "analyst_reviews": [
@@ -253,25 +368,25 @@
     ]
   },
   {
-    "symbol": "HGSINDIA",
-    "company_name": "HGS (India)",
+    "symbol": "JOHNSON",
+    "company_name": "Johnsoncab Electricals",
     "analyst_reviews": [
       {
         "channel": "Chittorgarh IPO Watch",
-        "title": "HGS (India) IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=hgsindia+ipo+analysis"
+        "title": "Johnsoncab Electricals IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=johnson+ipo+analysis"
       },
       {
         "channel": "Market Express Terminal",
-        "title": "HGS (India) Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=hgsindia+ipo+valuation"
+        "title": "Johnsoncab Electricals Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=johnson+ipo+valuation"
       }
     ],
     "executive_interviews": [
       {
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=hgsindia+management+interview"
+        "url": "https://www.youtube.com/results?search_query=johnson+management+interview"
       }
     ]
   },
@@ -322,29 +437,6 @@
     ]
   },
   {
-    "symbol": "NITYASGEM",
-    "company_name": "Nityas Gems & Jewellery",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "Nityas Gems & Jewellery IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=nityasgem+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "Nityas Gems & Jewellery Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=nityasgem+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=nityasgem+management+interview"
-      }
-    ]
-  },
-  {
     "symbol": "VISHALNIR",
     "company_name": "Vishal Nirmiti",
     "analyst_reviews": [
@@ -364,6 +456,29 @@
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
         "url": "https://www.youtube.com/results?search_query=vishalnir+management+interview"
+      }
+    ]
+  },
+  {
+    "symbol": "NITYASGEM",
+    "company_name": "Nityas Gems & Jewellery",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "Nityas Gems & Jewellery IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=nityasgem+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "Nityas Gems & Jewellery Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=nityasgem+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=nityasgem+management+interview"
       }
     ]
   },
@@ -479,121 +594,6 @@
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
         "url": "https://www.youtube.com/results?search_query=germangre+management+interview"
-      }
-    ]
-  },
-  {
-    "symbol": "PARAS",
-    "company_name": "Paras Healthcare",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "Paras Healthcare IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=paras+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "Paras Healthcare Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=paras+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=paras+management+interview"
-      }
-    ]
-  },
-  {
-    "symbol": "SFCENV",
-    "company_name": "SFC Environmental Technologies",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "SFC Environmental Technologies IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=sfcenv+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "SFC Environmental Technologies Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=sfcenv+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=sfcenv+management+interview"
-      }
-    ]
-  },
-  {
-    "symbol": "FUSIONCX",
-    "company_name": "Fusion CX",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "Fusion CX IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=fusioncx+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "Fusion CX Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=fusioncx+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=fusioncx+management+interview"
-      }
-    ]
-  },
-  {
-    "symbol": "HDFIRE",
-    "company_name": "HD Fire Protect",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "HD Fire Protect IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=hdfire+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "HD Fire Protect Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=hdfire+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=hdfire+management+interview"
-      }
-    ]
-  },
-  {
-    "symbol": "JOHNSON",
-    "company_name": "Johnsoncab Electricals",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "Johnsoncab Electricals IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=johnson+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "Johnsoncab Electricals Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=johnson+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=johnson+management+interview"
       }
     ]
   }

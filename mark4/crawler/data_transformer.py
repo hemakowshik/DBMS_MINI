@@ -22,12 +22,6 @@ def init_live_db():
     with open(SCHEMA_PATH, 'r', encoding='utf-8') as f:
         schema_sql = f.read()
     conn.executescript(schema_sql)
-
-    vti_path = os.path.join(os.path.dirname(SCHEMA_PATH), "sql", "03_views_triggers_indexes.sql")
-    if os.path.exists(vti_path):
-        with open(vti_path, 'r', encoding='utf-8') as f:
-            conn.executescript(f.read())
-
     conn.commit()
     conn.close()
     print("[PIPELINE] Relational SQLite schema initialized with tables, views, indexes, and triggers.")

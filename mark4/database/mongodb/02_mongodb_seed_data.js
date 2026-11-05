@@ -9,14 +9,14 @@ db = db.getSiblingDB('ipo_intelligence_db');
 print('[SEEDING] Inserting 26 documents into company_filings...');
 db.company_filings.insertMany([
   {
-    "symbol": "BOMBAYCOAT",
-    "company_name": "Bombay Coated & Special Steels",
-    "segment": "Mainboard",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/bombaycoat_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/bombaycoat_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/bombaycoat_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/bombaycoat_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/bombaycoat_anchor_book.pdf",
+    "symbol": "MAXWELL",
+    "company_name": "Maxwell Engineering Solutions",
+    "segment": "SME",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/maxwell_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/maxwell_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/maxwell_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/maxwell_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/maxwell_anchor_book.pdf",
     "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
     "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
@@ -39,14 +39,14 @@ db.company_filings.insertMany([
     "last_synced": "2026-11-01T18:00:00Z"
   },
   {
-    "symbol": "MAXWELL",
-    "company_name": "Maxwell Engineering Solutions",
-    "segment": "SME",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/maxwell_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/maxwell_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/maxwell_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/maxwell_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/maxwell_anchor_book.pdf",
+    "symbol": "BOMBAYCOAT",
+    "company_name": "Bombay Coated & Special Steels",
+    "segment": "Mainboard",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/bombaycoat_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/bombaycoat_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/bombaycoat_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/bombaycoat_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/bombaycoat_anchor_book.pdf",
     "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
     "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
@@ -54,14 +54,14 @@ db.company_filings.insertMany([
     "last_synced": "2026-11-01T18:00:00Z"
   },
   {
-    "symbol": "SFCENV",
-    "company_name": "SFC Environmental Technologies",
+    "symbol": "EAAA",
+    "company_name": "EAAA India Alternatives",
     "segment": "Mainboard",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/sfcenv_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/sfcenv_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/sfcenv_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/sfcenv_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/sfcenv_anchor_book.pdf",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/eaaa_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/eaaa_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/eaaa_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/eaaa_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/eaaa_anchor_book.pdf",
     "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
     "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
@@ -84,14 +84,14 @@ db.company_filings.insertMany([
     "last_synced": "2026-11-01T18:00:00Z"
   },
   {
-    "symbol": "EAAA",
-    "company_name": "EAAA India Alternatives",
+    "symbol": "SFCENV",
+    "company_name": "SFC Environmental Technologies",
     "segment": "Mainboard",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/eaaa_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/eaaa_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/eaaa_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/eaaa_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/eaaa_anchor_book.pdf",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/sfcenv_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/sfcenv_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/sfcenv_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/sfcenv_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/sfcenv_anchor_book.pdf",
     "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
     "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
@@ -174,6 +174,21 @@ db.company_filings.insertMany([
     "last_synced": "2026-11-01T18:00:00Z"
   },
   {
+    "symbol": "ZETWERK",
+    "company_name": "Zetwerk Manufacturing Business",
+    "segment": "Mainboard",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/zetwerk_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/zetwerk_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/zetwerk_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/zetwerk_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/zetwerk_anchor_book.pdf",
+    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
+    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
+    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
+    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
+    "last_synced": "2026-11-01T18:00:00Z"
+  },
+  {
     "symbol": "HDFIRE",
     "company_name": "HD Fire Protect",
     "segment": "Mainboard",
@@ -197,36 +212,6 @@ db.company_filings.insertMany([
     "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/bonfig_drhp_management_av.mp4",
     "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/bonfig_rhp_management_av.mp4",
     "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/bonfig_anchor_book.pdf",
-    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
-    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
-    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
-    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
-    "last_synced": "2026-11-01T18:00:00Z"
-  },
-  {
-    "symbol": "ZETWERK",
-    "company_name": "Zetwerk Manufacturing Business",
-    "segment": "Mainboard",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/zetwerk_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/zetwerk_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/zetwerk_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/zetwerk_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/zetwerk_anchor_book.pdf",
-    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
-    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
-    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
-    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
-    "last_synced": "2026-11-01T18:00:00Z"
-  },
-  {
-    "symbol": "HGSINDIA",
-    "company_name": "HGS (India)",
-    "segment": "SME",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/hgsindia_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/hgsindia_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/hgsindia_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/hgsindia_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/hgsindia_anchor_book.pdf",
     "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
     "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
@@ -264,21 +249,6 @@ db.company_filings.insertMany([
     "last_synced": "2026-11-01T18:00:00Z"
   },
   {
-    "symbol": "VECTRAS",
-    "company_name": "Vectras Enprocon",
-    "segment": "SME",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/vectras_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/vectras_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/vectras_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/vectras_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/vectras_anchor_book.pdf",
-    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
-    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
-    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
-    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
-    "last_synced": "2026-11-01T18:00:00Z"
-  },
-  {
     "symbol": "ANTALA",
     "company_name": "Antala Industries",
     "segment": "SME",
@@ -287,6 +257,36 @@ db.company_filings.insertMany([
     "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/antala_drhp_management_av.mp4",
     "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/antala_rhp_management_av.mp4",
     "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/antala_anchor_book.pdf",
+    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
+    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
+    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
+    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
+    "last_synced": "2026-11-01T18:00:00Z"
+  },
+  {
+    "symbol": "HGSINDIA",
+    "company_name": "HGS (India)",
+    "segment": "SME",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/hgsindia_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/hgsindia_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/hgsindia_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/hgsindia_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/hgsindia_anchor_book.pdf",
+    "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
+    "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
+    "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
+    "statutory_auditors": "B S R & Co. LLP / Deloitte Haskins & Sells",
+    "last_synced": "2026-11-01T18:00:00Z"
+  },
+  {
+    "symbol": "VECTRAS",
+    "company_name": "Vectras Enprocon",
+    "segment": "SME",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/vectras_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/vectras_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/vectras_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/vectras_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/vectras_anchor_book.pdf",
     "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
     "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
@@ -354,14 +354,14 @@ db.company_filings.insertMany([
     "last_synced": "2026-11-01T18:00:00Z"
   },
   {
-    "symbol": "ACEVECTOR",
-    "company_name": "Acevector",
+    "symbol": "GERMANGRE",
+    "company_name": "German Green Steel & Power",
     "segment": "Mainboard",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/acevector_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/acevector_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/acevector_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/acevector_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/acevector_anchor_book.pdf",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/germangre_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/germangre_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/germangre_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/germangre_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/germangre_anchor_book.pdf",
     "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
     "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
@@ -384,14 +384,14 @@ db.company_filings.insertMany([
     "last_synced": "2026-11-01T18:00:00Z"
   },
   {
-    "symbol": "GERMANGRE",
-    "company_name": "German Green Steel & Power",
+    "symbol": "ACEVECTOR",
+    "company_name": "Acevector",
     "segment": "Mainboard",
-    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/germangre_draft_prospectus.pdf",
-    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/germangre_red_herring_prospectus.pdf",
-    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/germangre_drhp_management_av.mp4",
-    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/germangre_rhp_management_av.mp4",
-    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/germangre_anchor_book.pdf",
+    "drhp_pdf_url": "https://www.sebi.gov.in/filings/drhp/acevector_draft_prospectus.pdf",
+    "rhp_pdf_url": "https://www.bseindia.com/corporates/rhp/acevector_red_herring_prospectus.pdf",
+    "drhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/acevector_drhp_management_av.mp4",
+    "rhp_av_mp4_url": "https://www.sebi.gov.in/filings/multimedia/acevector_rhp_management_av.mp4",
+    "anchor_allotment_pdf_url": "https://www.chittorgarh.net/reports/anchor-investor/acevector_anchor_book.pdf",
     "bse_portal_url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?issue_type=IPO&status=F",
     "sebi_portal_url": "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=3&ssid=15&smid=11",
     "lead_counsel": "Cyril Amarchand Mangaldas / Shardul Amarchand",
@@ -403,25 +403,25 @@ db.company_filings.insertMany([
 print('[SEEDING] Inserting 26 documents into media_and_research...');
 db.media_and_research.insertMany([
   {
-    "symbol": "BOMBAYCOAT",
-    "company_name": "Bombay Coated & Special Steels",
+    "symbol": "MAXWELL",
+    "company_name": "Maxwell Engineering Solutions",
     "analyst_reviews": [
       {
         "channel": "Chittorgarh IPO Watch",
-        "title": "Bombay Coated & Special Steels IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=bombaycoat+ipo+analysis"
+        "title": "Maxwell Engineering Solutions IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=maxwell+ipo+analysis"
       },
       {
         "channel": "Market Express Terminal",
-        "title": "Bombay Coated & Special Steels Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=bombaycoat+ipo+valuation"
+        "title": "Maxwell Engineering Solutions Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=maxwell+ipo+valuation"
       }
     ],
     "executive_interviews": [
       {
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=bombaycoat+management+interview"
+        "url": "https://www.youtube.com/results?search_query=maxwell+management+interview"
       }
     ]
   },
@@ -449,48 +449,48 @@ db.media_and_research.insertMany([
     ]
   },
   {
-    "symbol": "MAXWELL",
-    "company_name": "Maxwell Engineering Solutions",
+    "symbol": "BOMBAYCOAT",
+    "company_name": "Bombay Coated & Special Steels",
     "analyst_reviews": [
       {
         "channel": "Chittorgarh IPO Watch",
-        "title": "Maxwell Engineering Solutions IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=maxwell+ipo+analysis"
+        "title": "Bombay Coated & Special Steels IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=bombaycoat+ipo+analysis"
       },
       {
         "channel": "Market Express Terminal",
-        "title": "Maxwell Engineering Solutions Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=maxwell+ipo+valuation"
+        "title": "Bombay Coated & Special Steels Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=bombaycoat+ipo+valuation"
       }
     ],
     "executive_interviews": [
       {
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=maxwell+management+interview"
+        "url": "https://www.youtube.com/results?search_query=bombaycoat+management+interview"
       }
     ]
   },
   {
-    "symbol": "SFCENV",
-    "company_name": "SFC Environmental Technologies",
+    "symbol": "EAAA",
+    "company_name": "EAAA India Alternatives",
     "analyst_reviews": [
       {
         "channel": "Chittorgarh IPO Watch",
-        "title": "SFC Environmental Technologies IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=sfcenv+ipo+analysis"
+        "title": "EAAA India Alternatives IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=eaaa+ipo+analysis"
       },
       {
         "channel": "Market Express Terminal",
-        "title": "SFC Environmental Technologies Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=sfcenv+ipo+valuation"
+        "title": "EAAA India Alternatives Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=eaaa+ipo+valuation"
       }
     ],
     "executive_interviews": [
       {
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=sfcenv+management+interview"
+        "url": "https://www.youtube.com/results?search_query=eaaa+management+interview"
       }
     ]
   },
@@ -518,25 +518,25 @@ db.media_and_research.insertMany([
     ]
   },
   {
-    "symbol": "EAAA",
-    "company_name": "EAAA India Alternatives",
+    "symbol": "SFCENV",
+    "company_name": "SFC Environmental Technologies",
     "analyst_reviews": [
       {
         "channel": "Chittorgarh IPO Watch",
-        "title": "EAAA India Alternatives IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=eaaa+ipo+analysis"
+        "title": "SFC Environmental Technologies IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=sfcenv+ipo+analysis"
       },
       {
         "channel": "Market Express Terminal",
-        "title": "EAAA India Alternatives Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=eaaa+ipo+valuation"
+        "title": "SFC Environmental Technologies Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=sfcenv+ipo+valuation"
       }
     ],
     "executive_interviews": [
       {
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=eaaa+management+interview"
+        "url": "https://www.youtube.com/results?search_query=sfcenv+management+interview"
       }
     ]
   },
@@ -656,6 +656,29 @@ db.media_and_research.insertMany([
     ]
   },
   {
+    "symbol": "ZETWERK",
+    "company_name": "Zetwerk Manufacturing Business",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "Zetwerk Manufacturing Business IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=zetwerk+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "Zetwerk Manufacturing Business Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=zetwerk+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=zetwerk+management+interview"
+      }
+    ]
+  },
+  {
     "symbol": "HDFIRE",
     "company_name": "HD Fire Protect",
     "analyst_reviews": [
@@ -698,52 +721,6 @@ db.media_and_research.insertMany([
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
         "url": "https://www.youtube.com/results?search_query=bonfig+management+interview"
-      }
-    ]
-  },
-  {
-    "symbol": "ZETWERK",
-    "company_name": "Zetwerk Manufacturing Business",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "Zetwerk Manufacturing Business IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=zetwerk+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "Zetwerk Manufacturing Business Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=zetwerk+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=zetwerk+management+interview"
-      }
-    ]
-  },
-  {
-    "symbol": "HGSINDIA",
-    "company_name": "HGS (India)",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "HGS (India) IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=hgsindia+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "HGS (India) Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=hgsindia+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=hgsindia+management+interview"
       }
     ]
   },
@@ -794,29 +771,6 @@ db.media_and_research.insertMany([
     ]
   },
   {
-    "symbol": "VECTRAS",
-    "company_name": "Vectras Enprocon",
-    "analyst_reviews": [
-      {
-        "channel": "Chittorgarh IPO Watch",
-        "title": "Vectras Enprocon IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=vectras+ipo+analysis"
-      },
-      {
-        "channel": "Market Express Terminal",
-        "title": "Vectras Enprocon Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=vectras+ipo+valuation"
-      }
-    ],
-    "executive_interviews": [
-      {
-        "source": "CNBC-TV18",
-        "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=vectras+management+interview"
-      }
-    ]
-  },
-  {
     "symbol": "ANTALA",
     "company_name": "Antala Industries",
     "analyst_reviews": [
@@ -836,6 +790,52 @@ db.media_and_research.insertMany([
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
         "url": "https://www.youtube.com/results?search_query=antala+management+interview"
+      }
+    ]
+  },
+  {
+    "symbol": "HGSINDIA",
+    "company_name": "HGS (India)",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "HGS (India) IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=hgsindia+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "HGS (India) Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=hgsindia+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=hgsindia+management+interview"
+      }
+    ]
+  },
+  {
+    "symbol": "VECTRAS",
+    "company_name": "Vectras Enprocon",
+    "analyst_reviews": [
+      {
+        "channel": "Chittorgarh IPO Watch",
+        "title": "Vectras Enprocon IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=vectras+ipo+analysis"
+      },
+      {
+        "channel": "Market Express Terminal",
+        "title": "Vectras Enprocon Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=vectras+ipo+valuation"
+      }
+    ],
+    "executive_interviews": [
+      {
+        "source": "CNBC-TV18",
+        "spokesperson": "Managing Director & CEO",
+        "url": "https://www.youtube.com/results?search_query=vectras+management+interview"
       }
     ]
   },
@@ -932,25 +932,25 @@ db.media_and_research.insertMany([
     ]
   },
   {
-    "symbol": "ACEVECTOR",
-    "company_name": "Acevector",
+    "symbol": "GERMANGRE",
+    "company_name": "German Green Steel & Power",
     "analyst_reviews": [
       {
         "channel": "Chittorgarh IPO Watch",
-        "title": "Acevector IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=acevector+ipo+analysis"
+        "title": "German Green Steel & Power IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=germangre+ipo+analysis"
       },
       {
         "channel": "Market Express Terminal",
-        "title": "Acevector Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=acevector+ipo+valuation"
+        "title": "German Green Steel & Power Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=germangre+ipo+valuation"
       }
     ],
     "executive_interviews": [
       {
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=acevector+management+interview"
+        "url": "https://www.youtube.com/results?search_query=germangre+management+interview"
       }
     ]
   },
@@ -978,25 +978,25 @@ db.media_and_research.insertMany([
     ]
   },
   {
-    "symbol": "GERMANGRE",
-    "company_name": "German Green Steel & Power",
+    "symbol": "ACEVECTOR",
+    "company_name": "Acevector",
     "analyst_reviews": [
       {
         "channel": "Chittorgarh IPO Watch",
-        "title": "German Green Steel & Power IPO Detailed Business Model, GMP & Valuation Review",
-        "url": "https://www.youtube.com/results?search_query=germangre+ipo+analysis"
+        "title": "Acevector IPO Detailed Business Model, GMP & Valuation Review",
+        "url": "https://www.youtube.com/results?search_query=acevector+ipo+analysis"
       },
       {
         "channel": "Market Express Terminal",
-        "title": "German Green Steel & Power Industry Tailwinds & Financial Ratio Forensics",
-        "url": "https://www.youtube.com/results?search_query=germangre+ipo+valuation"
+        "title": "Acevector Industry Tailwinds & Financial Ratio Forensics",
+        "url": "https://www.youtube.com/results?search_query=acevector+ipo+valuation"
       }
     ],
     "executive_interviews": [
       {
         "source": "CNBC-TV18",
         "spokesperson": "Managing Director & CEO",
-        "url": "https://www.youtube.com/results?search_query=germangre+management+interview"
+        "url": "https://www.youtube.com/results?search_query=acevector+management+interview"
       }
     ]
   }
@@ -1004,52 +1004,6 @@ db.media_and_research.insertMany([
 
 print('[SEEDING] Inserting 26 documents into peer_comparison_matrix...');
 db.peer_comparison_matrix.insertMany([
-  {
-    "symbol": "BOMBAYCOAT",
-    "company_name": "Bombay Coated & Special Steels",
-    "sector": "Iron & Steel Products",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "BLSPOLY",
-    "company_name": "BLS Polymers",
-    "sector": "Plastic Products - Industrial",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
   {
     "symbol": "MAXWELL",
     "company_name": "Maxwell Engineering Solutions",
@@ -1074,9 +1028,55 @@ db.peer_comparison_matrix.insertMany([
     ]
   },
   {
-    "symbol": "SFCENV",
-    "company_name": "SFC Environmental Technologies",
-    "sector": "Diversified Financial Services",
+    "symbol": "BLSPOLY",
+    "company_name": "BLS Polymers",
+    "sector": "Specialty Chemicals",
+    "peers": [
+      {
+        "company": "Pidilite Industries Limited",
+        "p_e": 62.4,
+        "ronw_pct": 21.2,
+        "eps": 34.5,
+        "revenue_cr": 12450.0,
+        "custom_metric": "Capacity_Utilization: 88%"
+      },
+      {
+        "company": "Astral Limited",
+        "p_e": 54.1,
+        "ronw_pct": 18.7,
+        "eps": 21.1,
+        "revenue_cr": 5600.0,
+        "custom_metric": "Dealer_Count: 2200"
+      }
+    ]
+  },
+  {
+    "symbol": "BOMBAYCOAT",
+    "company_name": "Bombay Coated & Special Steels",
+    "sector": "Iron & Steel Products",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "EAAA",
+    "company_name": "EAAA India Alternatives",
+    "sector": "Asset Management Company",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -1120,9 +1120,9 @@ db.peer_comparison_matrix.insertMany([
     ]
   },
   {
-    "symbol": "EAAA",
-    "company_name": "EAAA India Alternatives",
-    "sector": "Asset Management Company",
+    "symbol": "SFCENV",
+    "company_name": "SFC Environmental Technologies",
+    "sector": "Diversified Financial Services",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -1258,6 +1258,29 @@ db.peer_comparison_matrix.insertMany([
     ]
   },
   {
+    "symbol": "ZETWERK",
+    "company_name": "Zetwerk Manufacturing Business",
+    "sector": "Industrial Products",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
     "symbol": "HDFIRE",
     "company_name": "HD Fire Protect",
     "sector": "Industrial Products",
@@ -1284,52 +1307,6 @@ db.peer_comparison_matrix.insertMany([
     "symbol": "BONFIG",
     "company_name": "Bonfiglioli Transmissions",
     "sector": "Industrial Products",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "ZETWERK",
-    "company_name": "Zetwerk Manufacturing Business",
-    "sector": "Industrial Products",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "HGSINDIA",
-    "company_name": "HGS (India)",
-    "sector": "Diversified Financial Services",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -1396,9 +1373,9 @@ db.peer_comparison_matrix.insertMany([
     ]
   },
   {
-    "symbol": "VECTRAS",
-    "company_name": "Vectras Enprocon",
-    "sector": "Civil Construction",
+    "symbol": "ANTALA",
+    "company_name": "Antala Industries",
+    "sector": "Packaging",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -1419,9 +1396,32 @@ db.peer_comparison_matrix.insertMany([
     ]
   },
   {
-    "symbol": "ANTALA",
-    "company_name": "Antala Industries",
-    "sector": "Packaging",
+    "symbol": "HGSINDIA",
+    "company_name": "HGS (India)",
+    "sector": "Diversified Financial Services",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "VECTRAS",
+    "company_name": "Vectras Enprocon",
+    "sector": "Civil Construction",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -1534,25 +1534,25 @@ db.peer_comparison_matrix.insertMany([
     ]
   },
   {
-    "symbol": "ACEVECTOR",
-    "company_name": "Acevector",
-    "sector": "E-Retail/ E-Commerce",
+    "symbol": "GERMANGRE",
+    "company_name": "German Green Steel & Power",
+    "sector": "Iron & Steel Products",
     "peers": [
       {
-        "company": "Titan Company Limited",
-        "p_e": 82.1,
-        "ronw_pct": 29.5,
-        "eps": 39.8,
-        "revenue_cr": 51080.0,
-        "custom_metric": "Retail_Store_Count: 3100"
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
       },
       {
-        "company": "Kalyan Jewellers India Limited",
-        "p_e": 64.3,
-        "ronw_pct": 19.1,
-        "eps": 9.4,
-        "revenue_cr": 18500.0,
-        "custom_metric": "Same_Store_Sales_Growth: 18%"
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
       }
     ]
   },
@@ -1580,25 +1580,25 @@ db.peer_comparison_matrix.insertMany([
     ]
   },
   {
-    "symbol": "GERMANGRE",
-    "company_name": "German Green Steel & Power",
-    "sector": "Iron & Steel Products",
+    "symbol": "ACEVECTOR",
+    "company_name": "Acevector",
+    "sector": "E-Retail/ E-Commerce",
     "peers": [
       {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
+        "company": "Titan Company Limited",
+        "p_e": 82.1,
+        "ronw_pct": 29.5,
+        "eps": 39.8,
+        "revenue_cr": 51080.0,
+        "custom_metric": "Retail_Store_Count: 3100"
       },
       {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
+        "company": "Kalyan Jewellers India Limited",
+        "p_e": 64.3,
+        "ronw_pct": 19.1,
+        "eps": 9.4,
+        "revenue_cr": 18500.0,
+        "custom_metric": "Same_Store_Sales_Growth: 18%"
       }
     ]
   }
@@ -1606,32 +1606,6 @@ db.peer_comparison_matrix.insertMany([
 
 print('[SEEDING] Inserting 26 documents into drhp_rhp_deep_sections...');
 db.drhp_rhp_deep_sections.insertMany([
-  {
-    "symbol": "BOMBAYCOAT",
-    "company_name": "Bombay Coated & Special Steels",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Iron & Steel Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
-  {
-    "symbol": "BLSPOLY",
-    "company_name": "BLS Polymers",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Plastic Products - Industrial. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
   {
     "symbol": "MAXWELL",
     "company_name": "Maxwell Engineering Solutions",
@@ -1646,9 +1620,35 @@ db.drhp_rhp_deep_sections.insertMany([
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "SFCENV",
-    "company_name": "SFC Environmental Technologies",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "BLSPOLY",
+    "company_name": "BLS Polymers",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Specialty Chemicals. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
+    "symbol": "BOMBAYCOAT",
+    "company_name": "Bombay Coated & Special Steels",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Iron & Steel Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
+    "symbol": "EAAA",
+    "company_name": "EAAA India Alternatives",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Asset Management Company. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -1672,9 +1672,9 @@ db.drhp_rhp_deep_sections.insertMany([
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "EAAA",
-    "company_name": "EAAA India Alternatives",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Asset Management Company. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "SFCENV",
+    "company_name": "SFC Environmental Technologies",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -1750,6 +1750,19 @@ db.drhp_rhp_deep_sections.insertMany([
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
+    "symbol": "ZETWERK",
+    "company_name": "Zetwerk Manufacturing Business",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
     "symbol": "HDFIRE",
     "company_name": "HD Fire Protect",
     "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
@@ -1766,32 +1779,6 @@ db.drhp_rhp_deep_sections.insertMany([
     "symbol": "BONFIG",
     "company_name": "Bonfiglioli Transmissions",
     "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
-  {
-    "symbol": "ZETWERK",
-    "company_name": "Zetwerk Manufacturing Business",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Industrial Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
-    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
-    "objects_of_issue": [
-      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
-      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
-      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
-      "General corporate purposes in compliance with SEBI ICDR regulations"
-    ],
-    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
-  },
-  {
-    "symbol": "HGSINDIA",
-    "company_name": "HGS (India)",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -1828,9 +1815,9 @@ db.drhp_rhp_deep_sections.insertMany([
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "VECTRAS",
-    "company_name": "Vectras Enprocon",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Civil Construction. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "ANTALA",
+    "company_name": "Antala Industries",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Packaging. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -1841,9 +1828,22 @@ db.drhp_rhp_deep_sections.insertMany([
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "ANTALA",
-    "company_name": "Antala Industries",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Packaging. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "HGSINDIA",
+    "company_name": "HGS (India)",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Diversified Financial Services. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
+    "objects_of_issue": [
+      "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
+      "Repayment or pre-payment of certain term loan borrowings (Rs 30.00 Cr)",
+      "Funding working capital requirements for unit expansion (Rs 25.00 Cr)",
+      "General corporate purposes in compliance with SEBI ICDR regulations"
+    ],
+    "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
+  },
+  {
+    "symbol": "VECTRAS",
+    "company_name": "Vectras Enprocon",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Civil Construction. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -1906,9 +1906,9 @@ db.drhp_rhp_deep_sections.insertMany([
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "ACEVECTOR",
-    "company_name": "Acevector",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in E-Retail/ E-Commerce. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "GERMANGRE",
+    "company_name": "German Green Steel & Power",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Iron & Steel Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",
@@ -1932,9 +1932,9 @@ db.drhp_rhp_deep_sections.insertMany([
     "regulatory_footnotes": "Promoter minimum contribution of 20% post-issue equity locked for 18 months under SEBI ICDR Regulation 16. Balance promoter pre-issue shares locked for 6 months."
   },
   {
-    "symbol": "GERMANGRE",
-    "company_name": "German Green Steel & Power",
-    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in Iron & Steel Products. Exposure to foreign exchange fluctuations on imported capital machinery.",
+    "symbol": "ACEVECTOR",
+    "company_name": "Acevector",
+    "risk_factors_summary": "Dependence on top 5 customer relationships for >40% revenue. Raw material price volatility in E-Retail/ E-Commerce. Exposure to foreign exchange fluctuations on imported capital machinery.",
     "promoter_litigation": "No material criminal proceedings against promoters. Outstanding civil litigation related to municipal property tax assessments pending before appellate authorities.",
     "objects_of_issue": [
       "Funding capital expenditure for manufacturing capacity expansion (Rs 45.00 Cr)",

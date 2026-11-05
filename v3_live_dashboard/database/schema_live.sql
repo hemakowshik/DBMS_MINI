@@ -57,9 +57,10 @@ CREATE TABLE ipos (
 CREATE TABLE ipo_reservations (
     reservation_id INTEGER PRIMARY KEY AUTOINCREMENT,
     ipo_id INT NOT NULL,
-    category_name VARCHAR(40) NOT NULL,
-    percentage_allocated DECIMAL(5,2) NOT NULL,
-    shares_offered INT NOT NULL,
+    category_name VARCHAR(50) NOT NULL,
+    quota_percent DECIMAL(5,2) NOT NULL,
+    shares_reserved BIGINT NOT NULL,
+    min_investment_inr DECIMAL(12,2) NOT NULL,
     FOREIGN KEY (ipo_id) REFERENCES ipos(ipo_id) ON DELETE CASCADE
 );
 
@@ -67,23 +68,23 @@ CREATE TABLE anchor_investors (
     anchor_id INTEGER PRIMARY KEY AUTOINCREMENT,
     ipo_id INT NOT NULL,
     investor_name VARCHAR(150) NOT NULL,
-    institution_type VARCHAR(60) NOT NULL,
-    shares_allocated INT NOT NULL,
+    investor_category VARCHAR(60) NOT NULL,
+    shares_allocated BIGINT NOT NULL,
     amount_cr DECIMAL(10,2) NOT NULL,
-    lockin_days INT NOT NULL DEFAULT 30,
-    lockin_expiry_date DATE,
+    lockin_period_days INT NOT NULL DEFAULT 30,
+    lockin_expiry_date DATE NOT NULL,
     FOREIGN KEY (ipo_id) REFERENCES ipos(ipo_id) ON DELETE CASCADE
 );
 
 CREATE TABLE anchor_lockin_summary (
     summary_id INTEGER PRIMARY KEY AUTOINCREMENT,
     ipo_id INT NOT NULL,
+    lead_text TEXT,
     bid_date VARCHAR(40),
     anchor_price DECIMAL(10,2),
-    qib_pct VARCHAR(20),
-    shares_locked_30d INT,
-    shares_locked_90d INT,
-    lead_text TEXT,
+    qib_allotment_pct VARCHAR(20),
+    shares_locked_30d BIGINT,
+    shares_locked_90d BIGINT,
     FOREIGN KEY (ipo_id) REFERENCES ipos(ipo_id) ON DELETE CASCADE
 );
 

@@ -1,51 +1,5 @@
 [
   {
-    "symbol": "BOMBAYCOAT",
-    "company_name": "Bombay Coated & Special Steels",
-    "sector": "Iron & Steel Products",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "BLSPOLY",
-    "company_name": "BLS Polymers",
-    "sector": "Plastic Products - Industrial",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
     "symbol": "MAXWELL",
     "company_name": "Maxwell Engineering Solutions",
     "sector": "Other Industrial Products",
@@ -69,9 +23,55 @@
     ]
   },
   {
-    "symbol": "SFCENV",
-    "company_name": "SFC Environmental Technologies",
-    "sector": "Diversified Financial Services",
+    "symbol": "BLSPOLY",
+    "company_name": "BLS Polymers",
+    "sector": "Specialty Chemicals",
+    "peers": [
+      {
+        "company": "Pidilite Industries Limited",
+        "p_e": 62.4,
+        "ronw_pct": 21.2,
+        "eps": 34.5,
+        "revenue_cr": 12450.0,
+        "custom_metric": "Capacity_Utilization: 88%"
+      },
+      {
+        "company": "Astral Limited",
+        "p_e": 54.1,
+        "ronw_pct": 18.7,
+        "eps": 21.1,
+        "revenue_cr": 5600.0,
+        "custom_metric": "Dealer_Count: 2200"
+      }
+    ]
+  },
+  {
+    "symbol": "BOMBAYCOAT",
+    "company_name": "Bombay Coated & Special Steels",
+    "sector": "Iron & Steel Products",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "EAAA",
+    "company_name": "EAAA India Alternatives",
+    "sector": "Asset Management Company",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -115,9 +115,9 @@
     ]
   },
   {
-    "symbol": "EAAA",
-    "company_name": "EAAA India Alternatives",
-    "sector": "Asset Management Company",
+    "symbol": "SFCENV",
+    "company_name": "SFC Environmental Technologies",
+    "sector": "Diversified Financial Services",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -253,6 +253,29 @@
     ]
   },
   {
+    "symbol": "ZETWERK",
+    "company_name": "Zetwerk Manufacturing Business",
+    "sector": "Industrial Products",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
     "symbol": "HDFIRE",
     "company_name": "HD Fire Protect",
     "sector": "Industrial Products",
@@ -279,52 +302,6 @@
     "symbol": "BONFIG",
     "company_name": "Bonfiglioli Transmissions",
     "sector": "Industrial Products",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "ZETWERK",
-    "company_name": "Zetwerk Manufacturing Business",
-    "sector": "Industrial Products",
-    "peers": [
-      {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
-      },
-      {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
-      }
-    ]
-  },
-  {
-    "symbol": "HGSINDIA",
-    "company_name": "HGS (India)",
-    "sector": "Diversified Financial Services",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -391,9 +368,9 @@
     ]
   },
   {
-    "symbol": "VECTRAS",
-    "company_name": "Vectras Enprocon",
-    "sector": "Civil Construction",
+    "symbol": "ANTALA",
+    "company_name": "Antala Industries",
+    "sector": "Packaging",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -414,9 +391,32 @@
     ]
   },
   {
-    "symbol": "ANTALA",
-    "company_name": "Antala Industries",
-    "sector": "Packaging",
+    "symbol": "HGSINDIA",
+    "company_name": "HGS (India)",
+    "sector": "Diversified Financial Services",
+    "peers": [
+      {
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
+      },
+      {
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
+      }
+    ]
+  },
+  {
+    "symbol": "VECTRAS",
+    "company_name": "Vectras Enprocon",
+    "sector": "Civil Construction",
     "peers": [
       {
         "company": "Industry Benchmark Peer A",
@@ -529,25 +529,25 @@
     ]
   },
   {
-    "symbol": "ACEVECTOR",
-    "company_name": "Acevector",
-    "sector": "E-Retail/ E-Commerce",
+    "symbol": "GERMANGRE",
+    "company_name": "German Green Steel & Power",
+    "sector": "Iron & Steel Products",
     "peers": [
       {
-        "company": "Titan Company Limited",
-        "p_e": 82.1,
-        "ronw_pct": 29.5,
-        "eps": 39.8,
-        "revenue_cr": 51080.0,
-        "custom_metric": "Retail_Store_Count: 3100"
+        "company": "Industry Benchmark Peer A",
+        "p_e": 35.0,
+        "ronw_pct": 17.5,
+        "eps": 24.0,
+        "revenue_cr": 3200.0,
+        "custom_metric": "Asset_Turnover: 2.4x"
       },
       {
-        "company": "Kalyan Jewellers India Limited",
-        "p_e": 64.3,
-        "ronw_pct": 19.1,
-        "eps": 9.4,
-        "revenue_cr": 18500.0,
-        "custom_metric": "Same_Store_Sales_Growth: 18%"
+        "company": "Industry Benchmark Peer B",
+        "p_e": 42.2,
+        "ronw_pct": 14.2,
+        "eps": 18.5,
+        "revenue_cr": 4500.0,
+        "custom_metric": "EBITDA_Margin: 19.5%"
       }
     ]
   },
@@ -575,25 +575,25 @@
     ]
   },
   {
-    "symbol": "GERMANGRE",
-    "company_name": "German Green Steel & Power",
-    "sector": "Iron & Steel Products",
+    "symbol": "ACEVECTOR",
+    "company_name": "Acevector",
+    "sector": "E-Retail/ E-Commerce",
     "peers": [
       {
-        "company": "Industry Benchmark Peer A",
-        "p_e": 35.0,
-        "ronw_pct": 17.5,
-        "eps": 24.0,
-        "revenue_cr": 3200.0,
-        "custom_metric": "Asset_Turnover: 2.4x"
+        "company": "Titan Company Limited",
+        "p_e": 82.1,
+        "ronw_pct": 29.5,
+        "eps": 39.8,
+        "revenue_cr": 51080.0,
+        "custom_metric": "Retail_Store_Count: 3100"
       },
       {
-        "company": "Industry Benchmark Peer B",
-        "p_e": 42.2,
-        "ronw_pct": 14.2,
-        "eps": 18.5,
-        "revenue_cr": 4500.0,
-        "custom_metric": "EBITDA_Margin: 19.5%"
+        "company": "Kalyan Jewellers India Limited",
+        "p_e": 64.3,
+        "ronw_pct": 19.1,
+        "eps": 9.4,
+        "revenue_cr": 18500.0,
+        "custom_metric": "Same_Store_Sales_Growth: 18%"
       }
     ]
   }

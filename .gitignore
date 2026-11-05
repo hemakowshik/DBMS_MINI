@@ -8,6 +8,21 @@ venv/
 .venv/
 env/
 
+# Node.js and Next.js
+node_modules/
+.next/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
 # IDE files
 .vscode/
 .idea/
@@ -17,4 +32,3 @@ env/
 Thumbs.db
 ~$*
 *.tmp
-

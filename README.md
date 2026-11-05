@@ -1,110 +1,68 @@
-# IPOWatch Analytics: DBMS Mini Project
-**Course**: Database Management Systems Lab (UE23CS252 / AIML)  
-**Evaluator**: Prof. Smitha GR, Faculty of AIML, RR Campus, PES University  
-**Student SRN**: PES1UG24AM106  
-**Directory**: `C:\DBMS_MINI`  
+# IPOWatch Live Intelligence: DBMS Experiential Learning (Level 3 Project)
+**Course**: Database Management Systems (CS304 / UE23CS252)  
+**Faculty Evaluator / Course Instructor**: Dr. Nagasundari S, Department of AIML / CSE, PES University  
+**Student Team**:
+1. **Hema Kowshik G** (SRN: PES1UG24AM106)
+2. **Team Member 2**  
+**Repository**: `https://github.com/hemakowshik/DBMS_MINI.git`  
+**Target Directory**: `C:\DBMS_MINI`
 
 ---
 
-## 🚀 Quick Start (1-Command Run)
+## 🌟 Architecture & Paradigm Compliance (Level 3 Rubric)
 
-Run the entire system in one command from PowerShell or Command Prompt:
+| Rubric Requirement | Implementation in MARK4 Platform | Reference Code / Object |
+|---|---|---|
+| **SQL Database (Mandatory)** | **MySQL 8.0+ / SQLite 3**: 10 BCNF tables, 3 Triggers, 2 Stored Procedures, 2 Stored Functions, 4 Views, 14 B-Tree Indexes. | `database/sql/00_mysql_master_deploy.sql`, `mark4/database/schema_live.sql` |
+| **NoSQL Database** | **MongoDB 8.0+**: 4 Collections (`company_filings`, `media_and_research`, `peer_comparison_matrix`, `drhp_rhp_deep_sections`). | `mark4/database/mongodb/` |
+| **Vector Database (Requirement 8)** | **Cosine Similarity Vector Store**: Semantic retrieval across unstructured DRHP/RHP Prospectus corpus. | `mark4/backend/vector_engine.py`, `/api/vector-search` |
+| **Web Frontend (Requirement 9)** | **Next.js 14 Web Application**: High-performance financial terminal with Role-Based Access Control, live market tables, and interactive DML forms. | `frontend_nextjs/` (`http://localhost:3000`) |
+| **Advanced Features (Req 7)** | **Transactions, Views, Stored Procedures, Triggers, Indexes, Vector Similarity, NoSQL Aggregation** (7 features). | `database/sql/05_stored_procedures_functions.sql` |
+| **Auth & Security (Req 11, 13)** | **PBKDF2/SHA-256 Hashed Passwords**, Role-Based Access Control (`Admin`, `Analyst`, `Investor`), `.env` environment isolation. | `users` table, `/api/auth/login`, `.env.example` |
 
+---
+
+## 🚀 Quick Execution Guide
+
+### 1. Launch Next.js Web Frontend (Port 3000)
+```powershell
+cd C:\DBMS_MINI\frontend_nextjs
+npm run dev
+```
+*Opens interactive Next.js Terminal on `http://localhost:3000`.*
+
+### 2. Launch MARK4 Backend & Python Live Cockpit (Port 5003)
 ```powershell
 cd C:\DBMS_MINI
-python run.py
+python mark4/run_mark4.py
 ```
+*Opens MARK4 Live Cockpit on `http://127.0.0.1:5003`.*
 
-This will automatically:
-1. Initialize the Relational schema (8 normalized tables).
-2. Populate the database with realistic seed data.
-3. Seed MongoDB collections (`localhost:27017`).
-4. Start the interactive web dashboard on `http://127.0.0.1:5000` and open your default browser.
-
-### 🌟 V2 Dual-Mode Terminal (Enhanced Review Dashboard)
-To run the dual-mode capital market terminal (Company-First Cockpit + Market Comparison + Clickable Source Accuracy Forensics Modal):
+### 3. Run Stand-Alone Live Market Scraper
 ```powershell
-cd C:\DBMS_MINI\v2_dashboard
-python run_v2.py
+python C:\DBMS_MINI\mark4\crawl_now.py
 ```
-*(Runs on `http://127.0.0.1:5001`. See `v2_dashboard/README_V2.md` for full architecture and documentation).*
+*Concurrently scrapes 26 primary market offerings across 8 threads and updates both SQL & MongoDB.*
 
-### 🌐 V3 Live Market Terminal (Real Scraped Market Data & Web Crawler)
-To run the terminal populated with 100% real, active Indian IPO market data scraped from InvestorGain, IPOWatch, Chittorgarh & SEBI:
+### 4. Deploy Relational Database in MySQL 8.0
 ```powershell
-cd C:\DBMS_MINI\v3_live_dashboard
-python run_v3.py
-```
-*(Runs on `http://127.0.0.1:5002` with 1-click live market re-crawler. Run `python crawl_now.py` to re-scrape anytime. See `v3_live_dashboard/README_V3.md` for documentation).*
-
----
-
-## 📋 Faculty Requirements Compliance Checklist
-
-| Evaluator Requirement | Project Implementation | File Reference |
-|---|---|---|
-| **1. Minimum 5 tables in ER Diagram** | **8 normalized relational tables** in BCNF (`ipos`, `ipo_reservations`, `anchor_investors`, `subscription_bids`, `secondary_listing_metrics`, `gmp_platform_records`, `gmp_accuracy_eval`, `drhp_rhp_diffs`). | `database/schema.sql`, `docs/ER_DIAGRAM.md` |
-| **2. Use RDBMS + NoSQL** | **Hybrid Architecture**: Relational (MySQL / SQLite) for transactional financial bidding data + **MongoDB 8.2** for unstructured filings, AV MP4 videos, and peer matrices. | `backend/db_relational.py`, `backend/db_nosql.py`, `database/mongo_init.js` |
-| **3. Reports in Project Demo** | **5 live analytical reports** executing complex SQL aggregations (`GROUP BY`, `HAVING`, `SUM`, `AVG`, `JOIN`, Window/Case logic) and MongoDB Aggregation Pipelines. | `backend/reports.py`, Dashboard Tab "Faculty Demo Reports" |
-| **4. Novelty in Project** | **(1) Multi-Platform GMP Accuracy Scoreboard**: Ranks websites by Mean Absolute Error (MAE) against actual exchange listing gains.<br>**(2) DRHP vs RHP Regulatory Amendment Diff Tracker**: Surfaces structural changes post SEBI review. | `backend/seed_data.py`, Dashboard Tabs "GMP Accuracy Scoreboard" & "DRHP vs RHP Diff Tracker" |
-
----
-
-## 📂 Project Directory Structure
-
-```
-C:\DBMS_MINI\
-├── run.py                       # Single-command launcher (seeds DB & opens dashboard)
-├── README.md                    # Project documentation & run guide
-├── backend\
-│   ├── app.py                   # Flask REST API server and routing
-│   ├── config.py                # Database configurations & environment toggles
-│   ├── db_relational.py         # Relational database manager (MySQL + SQLite fallback)
-│   ├── db_nosql.py              # MongoDB client & collection handlers
-│   ├── seed_data.py             # Realistic seed generator for all 8 tables + MongoDB
-│   └── reports.py               # 5 advanced SQL and NoSQL aggregation reports
-├── database\
-│   ├── schema.sql               # MySQL/MariaDB schema with DDL, constraints & indexes
-│   ├── sqlite_schema.sql        # SQLite compatible DDL schema
-│   ├── mongo_init.js            # MongoDB initialization script
-│   └── ipo_intelligence.db      # Pre-generated SQLite database
-├── templates\
-│   └── index.html               # Modern interactive terminal dashboard
-├── static\
-│   ├── css\style.css            # Dark financial-terminal styling
-│   └── js\dashboard.js          # Dynamic UI controls, search filters & modal drilldown
-└── docs\
-    ├── ER_DIAGRAM.md            # Mermaid ER diagram & cardinality documentation
-    ├── VIVA_VOCE_PREP.md        # Comprehensive viva voce preparation guide for 26th
-    └── PROJECT_REPORT.md        # Complete academic mini project report
+# In MySQL Workbench or MySQL CLI:
+mysql -u root -p < C:\DBMS_MINI\database\sql\00_mysql_master_deploy.sql
 ```
 
 ---
 
-## 🧪 Switching Relational Engines (SQLite vs MySQL)
+## 🧪 Viva Demonstration Guide for Dr. Nagasundari S
 
-The system automatically runs on **SQLite** out-of-the-box for instant portability, and seamlessly connects to **MySQL Server 8.0** if preferred:
-
-To run on MySQL:
-1. Open MySQL Workbench and execute `database/schema.sql`.
-2. In `backend/config.py`, set:
-   ```python
-   DB_ENGINE = "mysql"
-   MYSQL_PASSWORD = "your_mysql_password"
-   ```
-3. Restart `python run.py`.
-
----
-
-## 📊 Live Reports Showcase
-
-1. **Report 1: Sector & Issue-Type Capital Aggregation**  
-   *SQL:* `GROUP BY sector, sale_type`, `SUM()`, `AVG()`, `COUNT()` (Direct analog to average department salary).
-2. **Report 2: Multi-Source GMP Accuracy Scoreboard**  
-   *SQL:* Computes Mean Absolute Error (MAE) ranking Chittorgarh, InvestorGain, IPOWatch, and GreyMarketIndia.
-3. **Report 3: Institutional Demand (QIB) vs Listing Day Discovery**  
-   *SQL:* 3-table `JOIN` correlating final day QIB subscription multiples with first-day listing pop.
-4. **Report 4: Anchor Lock-In Capital Exposure Report**  
-   *SQL:* Highlights total shares and capital (₹ Cr) unlocking upon 30-day and 90-day expiry.
-5. **Report 5: Hybrid NoSQL Sentiment vs Relational Listing Return**  
-   *Hybrid:* MongoDB aggregation pipeline on YouTube research reviews correlated with SQL listing returns.
+1. **Demonstrate Active Database Triggers**:
+   - Query live schema objects via browser: [`http://127.0.0.1:5003/api/database/schema-objects`](http://127.0.0.1:5003/api/database/schema-objects).
+   - Proves `trg_validate_price_band` and `trg_audit_ipo_status_change` are active inside `sqlite_master`.
+2. **Demonstrate Database Constraint Enforcement**:
+   - In Next.js app ("Add Offering" tab) or via curl: enter Min Price = ₹500 and Max Price = ₹400.
+   - The trigger aborts with: `Integrity Violation: price_band_max cannot be strictly less than price_band_min`.
+3. **Demonstrate Vector Semantic Search (Requirement 8)**:
+   - Go to "Vector DB Semantic Search" tab in Next.js or query:
+     `GET /api/vector-search?q=defense+night+vision+electro+optics`
+   - Returns **Tonbo Imaging India (TONBO)** with **38.76% Cosine Similarity** without keyword matching!
+4. **Demonstrate Role-Based Access Control**:
+   - Switch between **Admin**, **Analyst**, and **Investor** to demonstrate authorization boundaries.

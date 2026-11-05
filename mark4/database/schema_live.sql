@@ -287,3 +287,22 @@ FOR EACH ROW
 BEGIN
     UPDATE ipos SET created_at = CURRENT_TIMESTAMP WHERE ipo_id = NEW.ipo_id;
 END;
+
+
+-- ----------------------------------------------------------------------------
+-- TABLE 10: users (Role-Based Access Control: Admin, Analyst, Investor)
+-- Normalization: BCNF (Candidate Key: {user_id}, {username}, {email})
+-- Security: Passwords stored as PBKDF2/SHA-256 salted hashes
+-- ----------------------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS users (
+    user_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    role VARCHAR(20) NOT NULL CHECK (role IN ('Admin', 'Analyst', 'Investor')),
+    full_name VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_users_username ON users(username);
+CREATE INDEX IF NOT EXISTS idx_users_role ON users(role);

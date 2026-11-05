@@ -1,0 +1,104 @@
+{
+  "vector_dimension": 324,
+  "total_documents": 12,
+  "similarity_metric": "Cosine Similarity",
+  "model": "Dense Semantic Term-Vector Embedding Model (SEBI DRHP Corpus)",
+  "documents": [
+    {
+      "symbol": "EAAA",
+      "company_name": "EAAA India Alternatives",
+      "sector": "Asset Management & Alternative Investments",
+      "doc_type": "SEBI Final RHP Offering Prospectus",
+      "snippet": "Alternative asset management platform managing private equity, private credit, infrastructure yields, and structured credit funds for sovereign and domestic institutions. Key risks...",
+      "vector_dim": 324
+    },
+    {
+      "symbol": "PARAS",
+      "company_name": "Paras Healthcare",
+      "sector": "Healthcare Services & Multispecialty Hospitals",
+      "doc_type": "SEBI RHP Prospectus - Business Overview",
+      "snippet": "Operates tertiary care and super-specialty hospitals in tier-2 and tier-3 North Indian cities. Clinical specialties include oncology, cardiac sciences, neurosurgery, orthopedics, a...",
+      "vector_dim": 324
+    },
+    {
+      "symbol": "JIO",
+      "company_name": "Jio Platforms",
+      "sector": "Telecommunications & Digital Services",
+      "doc_type": "Mega DRHP Digital Ecosystem Dossier",
+      "snippet": "Leading Indian telecom and digital services conglomerate delivering 5G wireless broadband, cloud compute infrastructure, enterprise software, AI-driven data centers, and digital pa...",
+      "vector_dim": 324
+    },
+    {
+      "symbol": "TONBO",
+      "company_name": "Tonbo Imaging India",
+      "sector": "Defense Technology & Electro-Optics",
+      "doc_type": "SEBI RHP Prospectus - Audio-Visual Deep Section",
+      "snippet": "Designs indigenous electro-optics, night-vision sights, thermal imaging binoculars, autonomous drone targeting sensors, and tactical battle space surveillance solutions for global ...",
+      "vector_dim": 324
+    },
+    {
+      "symbol": "SMT",
+      "company_name": "Sahajanand Medical Technologies",
+      "sector": "Medical Devices & Interventional Cardiology",
+      "doc_type": "SEBI RHP Prospectus - Clinical Trials",
+      "snippet": "Medical device manufacturer specializing in drug-eluting coronary stents, structural heart valves, and vascular intervention catheters. Clinical trial validations conducted across ...",
+      "vector_dim": 324
+    },
+    {
+      "symbol": "BONFIG",
+      "company_name": "Bonfiglioli Transmissions",
+      "sector": "Industrial Engineering & Power Transmission",
+      "doc_type": "SEBI Final RHP Prospectus",
+      "snippet": "Manufacturer of high-precision planetary gearboxes, heavy-duty industrial gear motors, wind turbine yaw drives, and electric vehicle drivetrain components. Heavy exposure to renewa...",
+      "vector_dim": 324
+    },
+    {
+      "symbol": "ZETWERK",
+      "company_name": "Zetwerk Manufacturing Business",
+      "sector": "Contract Manufacturing & Precision Engineering",
+      "doc_type": "SEBI DRHP Prospectus - Global Supply Chain",
+      "snippet": "Global contract manufacturing platform providing precision components, fabricated steel structures, consumer electronics PCB assembly, and renewable solar tracker manufacturing. Pr...",
+      "vector_dim": 324
+    },
+    {
+      "symbol": "FUSIONCX",
+      "company_name": "Fusion CX",
+      "sector": "BPO & IT Enabled Services",
+      "doc_type": "SEBI RHP Prospectus",
+      "snippet": "Global digital customer experience management and business process outsourcing firm. Provides AI-powered omnichannel contact center automation, voice intelligence analytics, custom...",
+      "vector_dim": 324
+    },
+    {
+      "symbol": "HDFIRE",
+      "company_name": "HD Fire Protect",
+      "sector": "Industrial Fire Protection & Safety Equipment",
+      "doc_type": "SEBI Final RHP Prospectus",
+      "snippet": "Specializes in manufacturing industrial fire protection systems, deluge valve skids, foam suppression systems, gas detection alarms, and water spray nozzles for petrochemical refin...",
+      "vector_dim": 324
+    },
+    {
+      "symbol": "VEDANT",
+      "company_name": "Vedant Poly Fabs",
+      "sector": "Textiles & Synthetic Polymers",
+      "doc_type": "SEBI Prospectus Filing",
+      "snippet": "Produces polypropylene woven fabric, flexible intermediate bulk container (FIBC) jumbo bags, and synthetic polymer packaging solutions for agricultural grains, chemical exports, an...",
+      "vector_dim": 324
+    },
+    {
+      "symbol": "ORIENTCAB",
+      "company_name": "Orient Cables (India)",
+      "sector": "Cables & Electrical Wire Manufacturing",
+      "doc_type": "SEBI RHP Prospectus",
+      "snippet": "Manufactures high-voltage extra high tension (EHT) power cables, low-smoke zero-halogen fire retardant building wires, railway signaling cables, and solar DC cables for grid modern...",
+      "vector_dim": 324
+    },
+    {
+      "symbol": "GERMANGRE",
+      "company_name": "German Green Steel & Power",
+      "sector": "Green Energy & Electric Arc Steel",
+      "doc_type": "SEBI DRHP Prospectus",
+      "snippet": "Pioneer in low-carbon green steel production utilizing electric arc furnace (EAF) technology powered by captive solar and wind hybrid plants. Decarbonizes structural TMT rebar prod...",
+      "vector_dim": 324
+    }
+  ]
+}

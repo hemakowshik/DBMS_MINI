@@ -1,3 +1,5 @@
+USE ipo_intelligence_db;
+
 -- ============================================================================
 -- PES UNIVERSITY • AIML / CSE DEPARTMENT • DBMS EXPERIENTIAL LEARNING
 -- Course: Database Management Systems (CS304 / UE23CS252)

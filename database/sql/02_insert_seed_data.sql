@@ -1,3 +1,5 @@
+USE ipo_intelligence_db;
+
 -- ============================================================================
 -- PES UNIVERSITY • AIML DEPARTMENT • DBMS MINI PROJECT (CS304)
 -- IPOWatch Intelligence & Primary Offering Forensics Platform (MARK4)
@@ -5,7 +7,7 @@
 -- Contains Real-World Active Market Offerings Scraped from NSE/BSE/SEBI
 -- ============================================================================
 
-BEGIN TRANSACTION;
+START TRANSACTION;
 
 -- ----------------------------------------------------------------------------
 -- Table: ipos (26 records)
@@ -732,5 +734,14 @@ INSERT INTO drhp_rhp_diffs (diff_id, ipo_id, parameter_name, drhp_val, rhp_val, 
 INSERT INTO drhp_rhp_diffs (diff_id, ipo_id, parameter_name, drhp_val, rhp_val, percentage_change, change_nature) VALUES (76, 26, 'Offer for Sale (OFS) Divestment', '0 Shares (Draft SEBI Filing)', '₹133.00 Cr Finalized in RHP', 31.7, 'Approved Promoters Selling Shareholder Divestment');
 INSERT INTO drhp_rhp_diffs (diff_id, ipo_id, parameter_name, drhp_val, rhp_val, percentage_change, change_nature) VALUES (77, 26, 'Issue Price Discovery Band', '₹30.0', '₹32.0', 6.7, 'Book Building Collar Finalized by Lead Managers');
 INSERT INTO drhp_rhp_diffs (diff_id, ipo_id, parameter_name, drhp_val, rhp_val, percentage_change, change_nature) VALUES (78, 26, 'Anchor Institutional Carve-Out', 'Up to 60% of QIB (DRHP Clause 4)', '60% Firm Allotment Finalized (RHP)', 0, 'Institutional Allocation Locked with 30d/90d Schedule');
+
+
+-- ----------------------------------------------------------------------------
+-- Table: users (Pre-seeded role accounts for viva demonstration)
+-- ----------------------------------------------------------------------------
+INSERT INTO users (username, email, password_hash, role, full_name) VALUES 
+('admin', 'admin@pes.edu', 'scrypt:32768:8:1', 'Admin', 'Chief Market Administrator'),
+('analyst', 'analyst@pes.edu', 'scrypt:32768:8:1', 'Analyst', 'Senior Research Analyst'),
+('investor', 'investor@pes.edu', 'scrypt:32768:8:1', 'Investor', 'Institutional Portfolio Manager');
 
 COMMIT;

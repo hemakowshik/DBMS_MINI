@@ -22,6 +22,44 @@ app = Flask(
 
 LAST_CRAWL_TIMESTAMP = str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S IST"))
 
+def ensure_database_initialized():
+    """Auto-bootstraps database on Render / container startup if missing or empty."""
+    db_file = config.SQLITE_DB_PATH
+    needs_init = False
+    if not os.path.exists(db_file) or os.path.getsize(db_file) == 0:
+        needs_init = True
+    else:
+        try:
+            conn = sqlite3.connect(db_file)
+            c = conn.cursor()
+            cnt = c.execute("SELECT count(*) FROM sqlite_master WHERE type='table' AND name='ipos'").fetchone()[0]
+            if cnt == 0:
+                needs_init = True
+            else:
+                row_cnt = c.execute("SELECT count(*) FROM ipos").fetchone()[0]
+                if row_cnt == 0:
+                    needs_init = True
+            conn.close()
+        except Exception:
+            needs_init = True
+    
+    if needs_init:
+        print("[STARTUP] Bootstrapping SQLite database with live primary market crawl...")
+        try:
+            try:
+                from ..crawler.data_transformer import ingest_live_market_data
+            except Exception:
+                from crawler.data_transformer import ingest_live_market_data
+            ingest_live_market_data()
+        except Exception as e:
+            print(f"[STARTUP WARN] Auto-bootstrap notice: {e}")
+
+try:
+    ensure_database_initialized()
+except Exception as e:
+    print(f"[STARTUP] Bootstrap notice: {e}")
+
+
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -754,6 +792,7 @@ def api_crawl_refresh():
 
         count = ingest_live_market_data()
         LAST_CRAWL_TIMESTAMP = str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S IST"))
+
         if not count:
             count_rows = execute_query("SELECT count(*) as cnt FROM ipos")
             count = count_rows[0]["cnt"] if count_rows else 0

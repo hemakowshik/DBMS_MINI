@@ -1,41 +1,26 @@
 #!/usr/bin/env python3
 """
-IPO Intelligence & GMP Analytics Platform
-PES University - AIML Department - DBMS Mini Project
-Faculty Evaluator: Prof. Smitha GR
+IPOWatch Live Intelligence Terminal (MARK4)
+Main Entry Point
 """
 import os
 import sys
-import webbrowser
-import threading
-import time
 
-# Ensure backend package can be imported
-sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+CURRENT_DIR = os.path.abspath(os.path.dirname(__file__))
+if CURRENT_DIR not in sys.path:
+    sys.path.insert(0, CURRENT_DIR)
 
-from backend.seed_data import seed_all
-from backend.app import app
-from backend import config
+MARK4_DIR = os.path.join(CURRENT_DIR, "mark4")
+if MARK4_DIR not in sys.path:
+    sys.path.insert(0, MARK4_DIR)
 
-def open_browser():
-    time.sleep(1.2)
-    url = f"http://localhost:{config.PORT}"
-    print(f"\n[INFO] Opening Dashboard in browser: {url}")
-    webbrowser.open(url)
+from mark4.backend.app import app
+from mark4.backend import config
 
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", config.PORT))
     print("=" * 70)
-    print("  IPOWatch Intelligence | Capital Market Terminal v2.4")
-    print("  Real-Time Primary Issue Surveillance & Forensics")
-    print("  Architecture: High-Throughput Relational Storage + Document Lake")
+    print("  IPOWatch Intelligence | MARK4 Terminal Active")
+    print(f"  Port: {port} | Database: {config.SQLITE_DB_PATH}")
     print("=" * 70)
-
-    # Initialize and seed databases
-    seed_all()
-
-    # Launch browser automatically
-    threading.Thread(target=open_browser, daemon=True).start()
-
-    print(f"\n[SERVER] Web application listening at http://127.0.0.1:{config.PORT}")
-    print("[SERVER] Press Ctrl+C to stop the server.\n")
-    app.run(host="127.0.0.1", port=config.PORT, debug=False)
+    app.run(host="0.0.0.0", port=port, debug=False)

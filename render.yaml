@@ -3,6 +3,5 @@ services:
     name: ipowatch-terminal-mark4
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn mark4.backend.app:app
+    startCommand: gunicorn wsgi:app --bind 0.0.0.0:$PORT
     plan: free
-

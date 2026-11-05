@@ -187,13 +187,19 @@ OFFICIAL_FILING_LINKS = {
     }
 }
 
+def make_soup(html_text):
+    try:
+        return BeautifulSoup(html_text, 'lxml')
+    except Exception:
+        return BeautifulSoup(html_text, 'html.parser')
+
 def fetch_live_ipowatch_gmp_map():
     """Scrapes real-time GMP quotes from IPOWatch across Mainboard & SME tables."""
     quotes = {}
     try:
         r = requests.get('https://ipowatch.in/ipo-grey-market-premium-latest-ipo-gmp/', headers=HEADERS, timeout=12)
         if r.status_code == 200:
-            soup = BeautifulSoup(r.text, 'lxml')
+            soup = make_soup(r.text)
             for t in soup.find_all('table'):
                 for tr in t.find_all('tr')[1:]:
                     cells = [c.get_text(' ', strip=True) for c in tr.find_all(['th', 'td'])]
@@ -218,7 +224,7 @@ def fetch_live_investorgain_gmp_map():
     try:
         r = requests.get('https://www.investorgain.com/report/live-ipo-gmp/331/', headers=HEADERS, timeout=12)
         if r.status_code == 200:
-            soup = BeautifulSoup(r.text, 'lxml')
+            soup = make_soup(r.text)
             for t in soup.find_all('table'):
                 for tr in t.find_all('tr')[1:]:
                     cells = [c.get_text(' ', strip=True) for c in tr.find_all(['th', 'td'])]
@@ -241,7 +247,7 @@ def get_soup(url, timeout=8):
     try:
         r = requests.get(url, headers=HEADERS, timeout=timeout)
         if r.status_code == 200:
-            return BeautifulSoup(r.text, 'lxml')
+            return make_soup(r.text)
     except Exception as e:
         print(f"[WARN] Connection notice for {url}: {e}")
     return None

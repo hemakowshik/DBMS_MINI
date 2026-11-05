@@ -43,7 +43,7 @@ CREATE TABLE ipos (
     status VARCHAR(20) NOT NULL,
     status_order INT NOT NULL DEFAULT 1,
     registrar_name VARCHAR(100),
-    brlm_lead_manager VARCHAR(255),
+    brlm_lead_manager TEXT,
     exchange VARCHAR(30) DEFAULT 'NSE / BSE',
     segment VARCHAR(20) DEFAULT 'Mainboard',
     face_value DECIMAL(6,2) DEFAULT 10.00,

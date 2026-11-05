@@ -51,7 +51,7 @@ CREATE TABLE ipos (
     status VARCHAR(20) NOT NULL,
     status_order INT NOT NULL DEFAULT 1,
     registrar_name VARCHAR(100),
-    brlm_lead_manager VARCHAR(255),
+    brlm_lead_manager TEXT,
     exchange VARCHAR(30) DEFAULT 'NSE / BSE',
     segment VARCHAR(20) DEFAULT 'Mainboard',
     face_value DECIMAL(6,2) DEFAULT 10.00,
@@ -146,10 +146,10 @@ CREATE TABLE drhp_rhp_diffs (
     diff_id INT AUTO_INCREMENT PRIMARY KEY,
     ipo_id INT NOT NULL,
     parameter_name VARCHAR(100) NOT NULL,
-    drhp_val VARCHAR(120) NOT NULL,
-    rhp_val VARCHAR(120) NOT NULL,
+    drhp_val TEXT NOT NULL,
+    rhp_val TEXT NOT NULL,
     percentage_change DECIMAL(6,2) NOT NULL,
-    change_nature VARCHAR(150) NOT NULL,
+    change_nature TEXT NOT NULL,
     FOREIGN KEY (ipo_id) REFERENCES ipos(ipo_id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
